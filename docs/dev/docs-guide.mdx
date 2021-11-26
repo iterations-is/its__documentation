@@ -1,0 +1,64 @@
+---
+---
+
+import Mermaid from '@theme/Mermaid';
+
+# Docs Guide
+
+## Notes
+
+:::note
+Some **content** with _markdown_ `syntax`.
+:::
+
+:::tip
+Some **content** with _markdown_ `syntax`.
+:::
+
+:::info
+Some **content** with _markdown_ `syntax`.
+:::
+
+:::caution
+Some **content** with _markdown_ `syntax`.
+:::
+
+:::danger
+Some **content** with _markdown_ `syntax`.
+:::
+
+## Katex
+
+This is KaTeX: $x = \sqrt{5}$.
+
+## Mermaid
+
+<Mermaid
+	chart={`
+		flowchart LR
+			subgraph Yarn
+			sources(JS sources)
+			end
+			bundleYarn(JS bundle)
+			Yarn --> bundleYarn
+	`}
+/>
+
+
+## Code Blocks
+
+Markdown code blocks are supported with Syntax highlighting.
+
+    ```jsx title="src/components/HelloDocusaurus.js"
+    function HelloDocusaurus() {
+        return (
+            <h1>Hello, Docusaurus!</h1>
+        )
+    }
+    ```
+
+```jsx title="src/components/HelloDocusaurus.js"
+function HelloDocusaurus() {
+  return <h1>Hello, Docusaurus!</h1>;
+}
+```
