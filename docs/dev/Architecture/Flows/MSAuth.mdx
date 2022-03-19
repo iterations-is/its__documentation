@@ -1,0 +1,151 @@
+---
+---
+
+import Mermaid from '@theme/Mermaid';
+
+# MS Auth
+
+### Sign Up
+
+<Mermaid
+	chart={`
+		sequenceDiagram
+			actor Guest
+			Guest->>MSAuth: signup(userData)
+			activate MSAuth
+			MSAuth->>MSUser: getAccount(userData)
+			activate MSUser
+			alt an account exists
+				MSUser-->>MSAuth: accountData
+				MSAuth-->>Guest: 400: user cannot be registered
+			else no account
+				MSUser-->>MSAuth: null
+				deactivate MSUser
+				MSAuth->>MSUser: createAccount(userData)
+				activate MSUser
+				MSUser-->>MSAuth: accountData
+				deactivate MSUser
+				MSAuth->>MSAuth: createTokenPair(accountData)
+				MSAuth-->>Guest: 201: accessToken, refreshToken
+				deactivate MSAuth
+			end
+	`}
+/>
+
+### Sign In
+
+<Mermaid
+	chart={`
+		sequenceDiagram
+			actor Guest
+			Guest->>MSAuth: signin(credentials)
+			activate MSAuth
+			MSAuth->>MSUser: getAccount(credentials)
+			activate MSUser
+			alt an account exists
+				MSUser-->>MSAuth: accountData
+				MSAuth->>MSAuth: createTokenPair(userData)
+				MSAuth-->>Guest: 200: accessToken, refreshToken
+			else no account
+				MSUser-->>MSAuth: null
+				deactivate MSUser
+				MSAuth-->>Guest: 400: bad credentials
+				deactivate MSAuth
+			end
+	`}
+/>
+
+
+### Reset password
+
+<Mermaid
+	chart={`
+		sequenceDiagram
+			actor Guest
+			Guest->>MSAuth: reset(email)
+			activate MSAuth
+			MSAuth->>MSUser: getAccount(userData)
+			activate MSUser
+			alt an account exists
+				MSUser-->>MSAuth: accountData
+				MSAuth->>MSAuth: generatePassword()
+				MSAuth-)WebMail: sendEmail(password)
+				activate WebMail
+				deactivate WebMail
+			else no account
+				MSUser-->>MSAuth: null
+				deactivate MSUser
+			end
+			MSAuth-->>Guest: 200: check your email
+			deactivate MSAuth
+	`}
+/>
+
+
+### Refresh token
+
+<Mermaid
+	chart={`
+		sequenceDiagram
+			actor User
+			User->>MSAuth: refresh(refreshToken)
+			activate MSAuth
+			MSAuth->>MSAuth: validate(refreshToken)
+			alt refresh token is OK
+				MSAuth->>MSUser: getAccount()
+				activate MSUser
+				MSUser-->>MSAuth: accountData
+				deactivate MSUser
+				MSAuth->>MSAuth: createTokenPair(accountData)
+				MSAuth-->>User: 201: accessToken, refreshToken
+			else refresh token is expired or wrong
+				MSAuth-->>User: 403: invalid token
+				deactivate MSAuth
+			end
+	`}
+/>
+
+
+### Unauthorized request
+
+<Mermaid
+	chart={`
+		sequenceDiagram
+			actor User
+			User->>MSRandom: todoUnauthorized()
+			activate MSRandom
+			rect rgb(228, 215, 247)
+				MSRandom->>+MSRandom: Process the request
+			end
+			MSRandom-->>User: 20x: response
+	`}
+/>
+
+### Authorized request
+
+<Mermaid
+	chart={`
+		sequenceDiagram
+			actor User
+			User->>MSRandom: todoAuthorized(accessToken)
+			activate MSRandom
+			MSRandom->>MSAuth: verify(accessToken)
+			activate MSAuth
+			alt access token is OK
+				MSAuth-->>MSRandom: true
+				rect rgb(228, 215, 247)
+					MSRandom->>MSRandom: Process the request
+				end
+				MSRandom-->>User: 20x: response
+			else access token is expired or wrong
+				alt access token is invalid
+					MSAuth-->>User: 403: invalid token
+				else access token is expired
+					MSAuth-->>User: 401: token is expired
+				end
+				deactivate MSAuth
+				deactivate MSRandom
+				note right of MSRandom: The error from MSAuth should be propagated to the user
+			end
+	`}
+/>

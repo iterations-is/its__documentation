@@ -1,0 +1,70 @@
+---
+sidebar_position: 1
+---
+
+import Mermaid from '@theme/Mermaid';
+
+# Microservices Readme
+
+## Development Run
+
+:::caution
+Considering a usage of `docker-compose.dev.yml` file within the `its` repository.
+:::
+
+Create `.env` file from dev examples (`.env.example`) manually or via:
+
+```
+sh env-create.dev.sh
+```
+
+Add required information to `.env` file - see output of `env-create.dev.sh`.
+
+`/its__gateway/dev.nginx.conf` - set IP address of the host running microservices.
+
+Run docker-compose with databases and stable services:
+
+```
+yarn s:dev
+```
+
+Run microservices in develop mode with watching OR build and run in production mode:
+
+```
+cd <its__ms_*>
+yarn d
+
+# OR
+
+yarn build
+yarn start
+```
+
+## Production Run
+
+:::caution
+Considering a usage of `docker-compose.prod.yml` file within the `its` repository.
+:::
+
+Create `.env.production` file from production examples (`.env.production.example`) manually or via:
+
+```
+sh env-create.prod.sh
+```
+
+Add required information to `.env` file - see output of `env-create.prod.sh`.
+
+Run `docker-compose.prod.yml` with build argument, possible alias:
+
+```
+yarn s:prod
+```
+
+Available sources:
+
+- `localhost:9000` - frontend
+- `localhost:10000` - backend API gateway
+
+### Troubleshooting
+
+Routing is processed by docker and gateway service that has `http://gateway.s/` url inside `backend` docker network. See `docker-compose.prod.yml` for more details. All MS need to set their `.env.production` variables according to domain aliases `docker-compose.prod.yml`.

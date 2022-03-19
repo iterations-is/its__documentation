@@ -1,0 +1,59 @@
+---
+---
+
+# Database Migrations
+
+## Development
+
+### Generate a new client library from your Prisma schema
+
+```shell
+npx prisma generate
+```
+![](https://www.prisma.io/docs/static/23697e3841e07a262f2e2eae70d11b19/3c492/prisma-client-node-module.png)
+
+### Simulates shallow updates without migration file
+
+```shell
+npx prisma db push
+```
+
+
+```shell
+npx prisma migrate dev
+npx prisma migrate reset
+```
+
+Seeds are invoked automatically:
+after
+```shell
+npx prisma migrate reset
+```
+
+
+
+
+
+Format Schema
+```
+npx prisma format
+```
+
+
+
+## Create migration
+
+Create and apply
+```shell
+npx prisma migrate dev
+```
+
+Create for customization
+```shell
+npx prisma migrate dev --create-only
+```
+edit
+```shell
+npx prisma migrate dev
+```
+
