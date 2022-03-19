@@ -1,0 +1,75 @@
+---
+sidebar_position: 1
+---
+
+# Production
+
+:::info
+Production instance. How to set up and start the environment.
+:::
+
+## Requirements
+
+- `its` [repository](https://github.com/iterations-is/its) and access to all microservice repositories (submodules)
+- docker
+- shell
+
+## Source code
+
+Clone main repository with all submodules:
+
+```shell
+git clone git@github.com:iterations-is/its.git
+git submodule update --init --recursive
+```
+
+## Configuration
+
+Create `.env.production` files from production examples (`.env.production.example` in each microservice repository) manually or via:
+
+```
+sh env-create.prod.sh
+```
+
+Add required information to some `.env.production` files - see output of `env-create.prod.sh`.
+
+## Running
+
+Start databases, message broker, microservices and gateway with docker-compose:
+
+```shell
+docker-compose -f docker-compose.prod.yml up -d --build
+# or
+yarn s:prod
+```
+
+Some containers may fall after first run because of time-consuming initialization (`dependent_on` property doesn't work). Just restart them later in this order:
+
+- databases and broker
+- microservices
+- gateway
+
+:::danger FIXME time-dependent services
+Some services need to wait for other services to be ready. Write wait-for-it scripts, see [Docker - Startup Order](https://docs.docker.com/compose/startup-order/).
+:::
+
+You can stop everything with:
+
+```shell
+docker-compose -f docker-compose.prod.yml down
+# or
+yarn d:prod
+```
+
+An alias for production environment is `yarn t:prod`, all production related docker-compose command may be called as:
+
+```shell
+yarn t:prod restart [service]
+yarn t:prod up [service]
+# etc
+```
+
+## Available access points
+
+- [http://localhost:9000](http://localhost:9000) - frontend
+- [http://localhost:10000](http://localhost:10000) - backend API gateway

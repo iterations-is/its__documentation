@@ -1,0 +1,103 @@
+---
+sidebar_position: 2
+---
+
+# Development
+
+:::info
+Development cycle flow. How to set up and start the environment.
+:::
+
+## Requirements
+
+- `its` [repository](https://github.com/iterations-is/its) and access to all microservice repositories (submodules)
+- docker
+- yarn, node.js 16
+- shell
+
+## Source code
+
+Clone main repository with all submodules:
+
+```shell
+git clone git@github.com:iterations-is/its.git
+git submodule update --init --recursive
+```
+
+## Configuration
+
+Create `.env` files from production examples (`.env.example` in each microservice repository) manually or via:
+
+```
+sh env-create.dev.sh
+```
+
+Add required information to some `.env` files - see output of `env-create.dev.sh`.
+
+`/its__gateway/dev.nginx.conf` - set IP address of the host running microservices. This domain/IP will be called from docker.
+
+## Running
+
+### 3rd party services
+
+Start databases, message broker and gateway with docker-compose:
+
+```shell
+docker-compose -f docker-compose.dev.yml up --build -d
+# or
+yarn s:dev
+```
+
+You can stop everything with:
+
+```shell
+docker-compose -f docker-compose.dev.yml down
+# or
+yarn d:dev
+```
+
+An alias for development environment is `yarn t:dev`, all development related docker-compose command may be called as:
+
+```shell
+yarn t:dev restart [service]
+yarn t:dev up [service]
+# etc
+```
+
+### Microservices
+
+Microservices using the relational database (contain `/its__ms_name/prisma` directory) need to run prisma client library geration and migrations before they can be used:
+```shell
+cd <its__ms_*>
+yarn prisma generate
+yarn prisma migrate dev
+```
+
+Run **_each_** microservice in develop mode with watching:
+
+```shell
+cd <its__ms_*>
+yarn dev
+```
+
+Or build and run them in production mode:
+
+```shell
+cd <its__ms_*>
+yarn build
+yarn start
+```
+
+### Frontend
+Run frontend:
+```shell
+cd its__client-web
+yarn dev
+```
+
+## Available access points
+
+- [http://localhost:9000](http://localhost:9000) - frontend
+- [http://docker:10000](http://localhost:10000) - backend API gateway - proxy to all microservices
+- [http://localhost:10?00](#) - microservices
+- [http://docker:????](#) - exposed ports of databases and message broker
