@@ -13,6 +13,7 @@ Production instance. How to set up and start the environment.
 - `its` [repository](https://github.com/iterations-is/its) and access to all microservice repositories (submodules)
 - docker
 - shell
+- Github account, organization and a token with access to create/update organization repositories (projects are stored at Github)
 
 ## Source code
 
@@ -33,6 +34,9 @@ sh env-create.prod.sh
 
 Add required information to some `.env.production` files - see output of `env-create.prod.sh`.
 
+Special variables:
+- `API_INTERNAL_TOKEN` takes care about security of internal API access, should be the same across all microservices.
+
 ## Running
 
 Start databases, message broker, microservices and gateway with docker-compose:
@@ -48,6 +52,10 @@ Some containers may fall after first run because of time-consuming initializatio
 - databases and broker
 - microservices
 - gateway
+
+```shell
+yarn t:prod restart <name>
+```
 
 :::danger FIXME time-dependent services
 Some services need to wait for other services to be ready. Write wait-for-it scripts, see [Docker - Startup Order](https://docs.docker.com/compose/startup-order/).

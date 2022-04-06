@@ -1,0 +1,92 @@
+
+@startuml
+<style>
+queue {
+   LineThickness: 1
+   BackGroundColor: white
+}
+interface {
+   BackGroundColor: white
+}
+component {
+   BackGroundColor: white
+}
+database {
+   BackGroundColor: white
+}
+</style>
+
+top to bottom direction
+'left to right direction
+interface API
+API -down-> NginxGateway
+component NginxGateway {
+   queue qAuth
+   queue qCommunication
+   queue qInterpreters
+   queue qProjects
+   queue qMonitoring
+   queue qUsers
+
+   qAuth -[hidden]- qUsers
+   qCommunication -[hidden]- qProjects
+   qInterpreters -[hidden]- qMonitoring
+}
+
+node Microservices {
+   component Auth
+   component Monitoring
+   component Communication
+   component Interpreters
+   component Projects
+   component Users
+
+'   Users -[hidden]- Auth
+}
+
+
+' queue ->
+qAuth -(0- Auth : :40100
+qCommunication -(0- Communication : :40200
+qInterpreters -(0- Interpreters : :40300
+qProjects -(0- Projects : :40600
+qMonitoring -(0- Monitoring : :40500
+qUsers -(0- Users : :40700
+
+interface BrokerConnect
+interface SQLConnect
+
+rectangle 3rrParty {
+BrokerConnect - MessageBroker
+
+   component MessageBroker {
+      queue bNotifications
+      queue bEmails
+      queue bLogs
+      bEmails -[hidden]- bNotifications
+      bLogs -[hidden]- bEmails
+   }
+    node Databases {
+         database SQLdatabase
+         database NoSQLdatabase
+      }
+}
+SQLConnect -- SQLdatabase
+
+Users ---( SQLConnect
+Communication ---( SQLConnect
+Interpreters ---( SQLConnect
+Projects ---( SQLConnect
+Monitoring -(0- NoSQLdatabase
+
+Auth --( BrokerConnect
+Interpreters --( BrokerConnect
+Communication --( BrokerConnect
+Projects --( BrokerConnect
+Monitoring --( BrokerConnect
+Users --( BrokerConnect
+
+Communication -0)- bEmails
+Communication -0)- bNotifications
+Monitoring -0)- bLogs
+@enduml

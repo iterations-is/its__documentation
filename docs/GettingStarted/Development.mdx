@@ -14,6 +14,7 @@ Development cycle flow. How to set up and start the environment.
 - docker
 - yarn, node.js 16
 - shell
+- Github account, organization and a token with access to create/update organization repositories (projects are stored at Github)
 
 ## Source code
 
@@ -73,6 +74,8 @@ yarn prisma generate
 yarn prisma migrate dev
 ```
 
+![](https://www.prisma.io/docs/static/23697e3841e07a262f2e2eae70d11b19/3c492/prisma-client-node-module.png)
+
 Run **_each_** microservice in develop mode with watching:
 
 ```shell
@@ -99,5 +102,5 @@ yarn dev
 
 - [http://localhost:9000](http://localhost:9000) - frontend
 - [http://docker:10000](http://localhost:10000) - backend API gateway - proxy to all microservices
-- [http://localhost:10?00](#) - microservices
+- [http://localhost:40?00](#) - microservices
 - [http://docker:????](#) - exposed ports of databases and message broker

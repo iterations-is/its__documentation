@@ -1,0 +1,46 @@
+---
+---
+
+# Database Migrations
+
+:::tip
+For the migration management is responsible [Prisma](https://www.prisma.io) framework. You can find more detailed information and command at the official documentation.
+:::
+
+## Shallow migration
+
+During the development you probably want to change the database schema and try the changes without creation of the migration file. With prisma you can do it with:
+
+```shell
+npx prisma db push
+```
+
+And then decide wherer your changes are worth it or not and create a migration file or revert the database state.
+
+```shell
+npx prisma migrate dev
+npx prisma migrate reset
+```
+
+## Create migration file
+
+### From current schema
+
+Edit `./prisma/schema.prisma` schema.
+
+```shell
+npx prisma migrate dev
+```
+
+### From custom SQL
+
+```shell
+Create an empty migration file:
+npx prisma migrate dev --create-only
+```
+
+Edit the created migration file `./prisma/migrations/??/??.sql` and apply it:
+
+```shell
+npx prisma migrate dev
+```

@@ -1,0 +1,38 @@
+
+@startuml
+<style>
+queue {
+   LineThickness: 1
+   BackGroundColor: white
+}
+interface {
+   BackGroundColor: white
+}
+component {
+   BackGroundColor: white
+}
+database {
+   BackGroundColor: white
+}
+node {
+   BackGroundColor: white
+}
+</style>
+
+'top to bottom direction
+left to right direction
+
+
+node Server {
+   component Gateway as BE
+}
+
+component [Next.js] as FE
+
+BE -0)- FE
+node  Interpreters {
+   component [<name>.<version>.js] as interpret
+}
+
+FE o-- interpret : ES6 Module
+@enduml

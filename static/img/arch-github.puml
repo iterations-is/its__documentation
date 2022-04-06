@@ -1,0 +1,34 @@
+
+@startuml
+<style>
+queue {
+   LineThickness: 1
+   BackGroundColor: white
+}
+interface {
+   BackGroundColor: white
+}
+component {
+   BackGroundColor: white
+}
+database {
+   BackGroundColor: white
+}
+node {
+   BackGroundColor: white
+}
+</style>
+
+'top to bottom direction
+left to right direction
+
+node Microservices {
+   component Projects
+}
+
+node Github {
+   component GithubAPI
+}
+
+Projects -(0-- GithubAPI : REST
+@enduml

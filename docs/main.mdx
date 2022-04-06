@@ -5,11 +5,35 @@ slug: /
 
 import Mermaid from '@theme/Mermaid';
 
-# Iterations - Documentation
+# Iterations
 
-## Port list
-- `10000` - user & developer documentation
-- `10000` - client web application (Next.js)
-- `80` - gateway
+> Iterations is an information system that provides a functionality for project management, team recruitment, task completion  and submitting individual phases (iterations) of projects for evaluation.
+
+![](/img/screenshot.png)
+
+
+## Repositories
+
+- **Main repository:**
+  - [Iterations](https://github.com/iterations-is/its) - almost ready for production repository
+  - **Submodule repositories:**
+    - [MS - Users](https://github.com/iterations-is/its__ms_users)
+    - [MS - Monitoring](https://github.com/iterations-is/its__ms_monitoring)
+    - [MS - Interpreters](https://github.com/iterations-is/its__ms_interpreters)
+    - [MS - Communication](https://github.com/iterations-is/its__ms_communication)
+    - [MS - Projects](https://github.com/iterations-is/its__ms_projects)
+    - [MS - Auth](https://github.com/iterations-is/its__ms_auth)
+    - [CLIENT - Web](https://github.com/iterations-is/its__client-web)
+- **Additional repositories:**
+  - [Documentation](https://github.com/iterations-is/its__documentation) - this documentation
+  - [Testing](https://github.com/iterations-is/its__testing) - set of integration tests
+  - [MS Template](https://github.com/iterations-is/its__ms_template) - a template for future microservices
+
+
+## List of port conventions
+- `3000` - developer documentation
+- `9000` - client web application (Next.js)
+- `10000` - gateway
 - `40***` - microservices
 
+See more detailed documentation [here](/Architecture/Environment).

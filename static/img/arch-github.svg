@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="125px" preserveAspectRatio="none" style="width:487px;height:125px;background:#FFFFFF;" version="1.1" viewBox="0 0 487 125" width="487px" zoomAndPan="magnify"><defs><filter height="300%" id="f1rcirzpifsxdr" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[f72e8905bd6e3a370cb106f12698fafd]
+cluster Microservices--><polygon fill="#FFFFFF" filter="url(#f1rcirzpifsxdr)" points="16,16,26,6,190,6,190,98,180,108,16,108,16,16" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="180" x2="190" y1="16" y2="6"/><line style="stroke:#A80036;stroke-width:1.0;" x1="16" x2="180" y1="16" y2="16"/><line style="stroke:#A80036;stroke-width:1.0;" x1="180" x2="180" y1="16" y2="108"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="98" x="50" y="32.5352">Microservices</text><!--MD5=[e5ae6d455ada1e092970eb67aef0204b]
+cluster Github--><polygon fill="#FFFFFF" filter="url(#f1rcirzpifsxdr)" points="330,16,340,6,470,6,470,98,460,108,330,108,330,16" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="460" x2="470" y1="16" y2="6"/><line style="stroke:#A80036;stroke-width:1.0;" x1="330" x2="460" y1="16" y2="16"/><line style="stroke:#A80036;stroke-width:1.0;" x1="460" x2="460" y1="16" y2="108"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="48" x="372" y="32.5352">Github</text><!--MD5=[38e62898c14212f96061eef12085427a]
+entity Projects--><rect fill="#FFFFFF" filter="url(#f1rcirzpifsxdr)" height="46.4883" style="stroke:#A80036;stroke-width:1.0;" width="94" x="56" y="46"/><rect fill="#FFFFFF" height="10" style="stroke:#A80036;stroke-width:1.0;" width="15" x="130" y="51"/><rect fill="#FFFFFF" height="2" style="stroke:#A80036;stroke-width:1.0;" width="4" x="128" y="53"/><rect fill="#FFFFFF" height="2" style="stroke:#A80036;stroke-width:1.0;" width="4" x="128" y="57"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="54" x="71" y="79.5352">Projects</text><!--MD5=[b19f518c327998e64bec2010ef6b7ef7]
+entity GithubAPI--><rect fill="#FFFFFF" filter="url(#f1rcirzpifsxdr)" height="46.4883" style="stroke:#A80036;stroke-width:1.0;" width="108" x="346" y="46"/><rect fill="#FFFFFF" height="10" style="stroke:#A80036;stroke-width:1.0;" width="15" x="434" y="51"/><rect fill="#FFFFFF" height="2" style="stroke:#A80036;stroke-width:1.0;" width="4" x="432" y="53"/><rect fill="#FFFFFF" height="2" style="stroke:#A80036;stroke-width:1.0;" width="4" x="432" y="57"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="68" x="361" y="79.5352">GithubAPI</text><!--MD5=[0938e779594f9606eed6de95558d2054]
+link Projects to GithubAPI--><path d="M150.09,69 C203.08,69 289.92,69 345.75,69 " fill="none" id="Projects-GithubAPI" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="30" x="245" y="58.5684">REST</text><path d="M239.7839,61.9289 A10,10 0 0 0 239.7839 76.0711" fill="none" style="stroke:#A80036;stroke-width:1.5;"/><ellipse cx="246.855" cy="69" fill="#FFFFFF" rx="6" ry="6" style="stroke:#A80036;stroke-width:1.5;"/><!--MD5=[e78e0df358eeed2b3f51f1cf9c313d8c]
+@startuml
+<style>
+queue {
+   LineThickness: 1
+   BackGroundColor: white
+}
+interface {
+   BackGroundColor: white
+}
+component {
+   BackGroundColor: white
+}
+database {
+   BackGroundColor: white
+}
+node {
+   BackGroundColor: white
+}
+</style>
+
+'top to bottom direction
+left to right direction
+
+node Microservices {
+   component Projects
+}
+
+node Github {
+   component GithubAPI
+}
+
+Projects -(0- - GithubAPI : REST
+@enduml
+
+@startuml
+<style>
+queue {
+   LineThickness: 1
+   BackGroundColor: white
+}
+interface {
+   BackGroundColor: white
+}
+component {
+   BackGroundColor: white
+}
+database {
+   BackGroundColor: white
+}
+node {
+   BackGroundColor: white
+}
+</style>
+
+left to right direction
+
+node Microservices {
+   component Projects
+}
+
+node Github {
+   component GithubAPI
+}
+
+Projects -(0- - GithubAPI : REST
+@enduml
+
+PlantUML version 1.2022.1(Tue Feb 01 19:19:58 CET 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: GB
+--></g></svg>

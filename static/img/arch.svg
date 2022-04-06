@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="1058px" preserveAspectRatio="none" style="width:872px;height:1058px;background:#FFFFFF;" version="1.1" viewBox="0 0 872 1058" width="872px" zoomAndPan="magnify"><defs><filter height="300%" id="f1ttu13dj8lzl6" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[daaa2723439b7e24470798abd0213842]
+cluster NginxGateway--><rect fill="#FFFFFF" filter="url(#f1ttu13dj8lzl6)" height="182.5" style="stroke:#A80036;stroke-width:1.0;" width="447" x="16" y="98"/><rect fill="#FFFFFF" height="10" style="stroke:#A80036;stroke-width:1.0;" width="15" x="443" y="103"/><rect fill="#FFFFFF" height="2" style="stroke:#A80036;stroke-width:1.0;" width="4" x="441" y="105"/><rect fill="#FFFFFF" height="2" style="stroke:#A80036;stroke-width:1.0;" width="4" x="441" y="109"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="102" x="188.5" y="124.5352">NginxGateway</text><!--MD5=[f72e8905bd6e3a370cb106f12698fafd]
+cluster Microservices--><polygon fill="#FFFFFF" filter="url(#f1ttu13dj8lzl6)" points="16,361.5,26,351.5,855,351.5,855,443.5,845,453.5,16,453.5,16,361.5" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="845" x2="855" y1="361.5" y2="351.5"/><line style="stroke:#A80036;stroke-width:1.0;" x1="16" x2="845" y1="361.5" y2="361.5"/><line style="stroke:#A80036;stroke-width:1.0;" x1="845" x2="845" y1="361.5" y2="453.5"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="98" x="382.5" y="378.0352">Microservices</text><!--MD5=[a079f8c8cc1423d04817180ee8d5eb04]
+cluster 3rrParty--><rect fill="#FFFFFF" filter="url(#f1ttu13dj8lzl6)" height="361.5" style="stroke:#A80036;stroke-width:1.0;" width="563" x="31" y="684.5"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="58" x="283.5" y="700.0352">3rrParty</text><!--MD5=[016e143154d9b6a9f0ef00fcedefb942]
+cluster MessageBroker--><rect fill="#FFFFFF" filter="url(#f1ttu13dj8lzl6)" height="278.5" style="stroke:#A80036;stroke-width:1.0;" width="172" x="390" y="735.5"/><rect fill="#FFFFFF" height="10" style="stroke:#A80036;stroke-width:1.0;" width="15" x="542" y="740.5"/><rect fill="#FFFFFF" height="2" style="stroke:#A80036;stroke-width:1.0;" width="4" x="540" y="742.5"/><rect fill="#FFFFFF" height="2" style="stroke:#A80036;stroke-width:1.0;" width="4" x="540" y="746.5"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="109" x="421.5" y="762.0352">MessageBroker</text><!--MD5=[00c6b0b359edc20bf57ae3e5e841ab11]
+cluster Databases--><polygon fill="#FFFFFF" filter="url(#f1ttu13dj8lzl6)" points="55,739,65,729,358,729,358,820,348,830,55,830,55,739" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="348" x2="358" y1="739" y2="729"/><line style="stroke:#A80036;stroke-width:1.0;" x1="55" x2="348" y1="739" y2="739"/><line style="stroke:#A80036;stroke-width:1.0;" x1="348" x2="348" y1="739" y2="830"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="74" x="165.5" y="755.5352">Databases</text><!--MD5=[2de19012d155a7dd10e9433db84d918d]
+entity qAuth--><path d="M209,141 L261,141 C266,141 266,154.2441 266,154.2441 C266,154.2441 266,167.4883 261,167.4883 L209,167.4883 C204,167.4883 204,154.2441 204,154.2441 C204,154.2441 204,141 209,141 " fill="#FFFFFF" filter="url(#f1ttu13dj8lzl6)" style="stroke:#A80036;stroke-width:1.0;"/><path d="M261,141 C256,141 256,154.2441 256,154.2441 C256,167.4883 261,167.4883 261,167.4883 " fill="none" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="42" x="209" y="159.5352">qAuth</text><!--MD5=[fd431da22c9881407ea350f62236bf18]
+entity qCommunication--><path d="M306,141 L434,141 C439,141 439,154.2441 439,154.2441 C439,154.2441 439,167.4883 434,167.4883 L306,167.4883 C301,167.4883 301,154.2441 301,154.2441 C301,154.2441 301,141 306,141 " fill="#FFFFFF" filter="url(#f1ttu13dj8lzl6)" style="stroke:#A80036;stroke-width:1.0;"/><path d="M434,141 C429,141 429,154.2441 429,154.2441 C429,167.4883 434,167.4883 434,167.4883 " fill="none" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="118" x="306" y="159.5352">qCommunication</text><!--MD5=[26f12ab116278ef61ba69ef798d14c43]
+entity qInterpreters--><path d="M64,141 L164,141 C169,141 169,154.2441 169,154.2441 C169,154.2441 169,167.4883 164,167.4883 L64,167.4883 C59,167.4883 59,154.2441 59,154.2441 C59,154.2441 59,141 64,141 " fill="#FFFFFF" filter="url(#f1ttu13dj8lzl6)" style="stroke:#A80036;stroke-width:1.0;"/><path d="M164,141 C159,141 159,154.2441 159,154.2441 C159,167.4883 164,167.4883 164,167.4883 " fill="none" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="90" x="64" y="159.5352">qInterpreters</text><!--MD5=[78b34e3c9489250513ac33d35916eee1]
+entity qProjects--><path d="M312.5,230.5 L385.5,230.5 C390.5,230.5 390.5,243.7441 390.5,243.7441 C390.5,243.7441 390.5,256.9883 385.5,256.9883 L312.5,256.9883 C307.5,256.9883 307.5,243.7441 307.5,243.7441 C307.5,243.7441 307.5,230.5 312.5,230.5 " fill="#FFFFFF" filter="url(#f1ttu13dj8lzl6)" style="stroke:#A80036;stroke-width:1.0;"/><path d="M385.5,230.5 C380.5,230.5 380.5,243.7441 380.5,243.7441 C380.5,256.9883 385.5,256.9883 385.5,256.9883 " fill="none" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="63" x="312.5" y="249.0352">qProjects</text><!--MD5=[ec9c2c2dd54a74d4a88c40d4c9cb6ed4]
+entity qMonitoring--><path d="M65.5,230.5 L160.5,230.5 C165.5,230.5 165.5,243.7441 165.5,243.7441 C165.5,243.7441 165.5,256.9883 160.5,256.9883 L65.5,256.9883 C60.5,256.9883 60.5,243.7441 60.5,243.7441 C60.5,243.7441 60.5,230.5 65.5,230.5 " fill="#FFFFFF" filter="url(#f1ttu13dj8lzl6)" style="stroke:#A80036;stroke-width:1.0;"/><path d="M160.5,230.5 C155.5,230.5 155.5,243.7441 155.5,243.7441 C155.5,256.9883 160.5,256.9883 160.5,256.9883 " fill="none" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="85" x="65.5" y="249.0352">qMonitoring</text><!--MD5=[bd5760038fcf3888c84ed444e6302ea0]
+entity qUsers--><path d="M205.5,230.5 L262.5,230.5 C267.5,230.5 267.5,243.7441 267.5,243.7441 C267.5,243.7441 267.5,256.9883 262.5,256.9883 L205.5,256.9883 C200.5,256.9883 200.5,243.7441 200.5,243.7441 C200.5,243.7441 200.5,230.5 205.5,230.5 " fill="#FFFFFF" filter="url(#f1ttu13dj8lzl6)" style="stroke:#A80036;stroke-width:1.0;"/><path d="M262.5,230.5 C257.5,230.5 257.5,243.7441 257.5,243.7441 C257.5,256.9883 262.5,256.9883 262.5,256.9883 " fill="none" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="47" x="205.5" y="249.0352">qUsers</text><!--MD5=[39222abbbfd087a4fdab60e627dc976f]
+entity Auth--><rect fill="#FFFFFF" filter="url(#f1ttu13dj8lzl6)" height="46.4883" style="stroke:#A80036;stroke-width:1.0;" width="73" x="581.5" y="391.5"/><rect fill="#FFFFFF" height="10" style="stroke:#A80036;stroke-width:1.0;" width="15" x="634.5" y="396.5"/><rect fill="#FFFFFF" height="2" style="stroke:#A80036;stroke-width:1.0;" width="4" x="632.5" y="398.5"/><rect fill="#FFFFFF" height="2" style="stroke:#A80036;stroke-width:1.0;" width="4" x="632.5" y="402.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="33" x="596.5" y="425.0352">Auth</text><!--MD5=[ff67a6d56b46582aabcb52a271276edf]
+entity Monitoring--><rect fill="#FFFFFF" filter="url(#f1ttu13dj8lzl6)" height="46.4883" style="stroke:#A80036;stroke-width:1.0;" width="116" x="32" y="391.5"/><rect fill="#FFFFFF" height="10" style="stroke:#A80036;stroke-width:1.0;" width="15" x="128" y="396.5"/><rect fill="#FFFFFF" height="2" style="stroke:#A80036;stroke-width:1.0;" width="4" x="126" y="398.5"/><rect fill="#FFFFFF" height="2" style="stroke:#A80036;stroke-width:1.0;" width="4" x="126" y="402.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="76" x="47" y="425.0352">Monitoring</text><!--MD5=[5a1e4884c9f368ca7fc3150ec0c6f817]
+entity Communication--><rect fill="#FFFFFF" filter="url(#f1ttu13dj8lzl6)" height="46.4883" style="stroke:#A80036;stroke-width:1.0;" width="149" x="689.5" y="391.5"/><rect fill="#FFFFFF" height="10" style="stroke:#A80036;stroke-width:1.0;" width="15" x="818.5" y="396.5"/><rect fill="#FFFFFF" height="2" style="stroke:#A80036;stroke-width:1.0;" width="4" x="816.5" y="398.5"/><rect fill="#FFFFFF" height="2" style="stroke:#A80036;stroke-width:1.0;" width="4" x="816.5" y="402.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="109" x="704.5" y="425.0352">Communication</text><!--MD5=[2379bb556bcca86388edd66f94caeb26]
+entity Interpreters--><rect fill="#FFFFFF" filter="url(#f1ttu13dj8lzl6)" height="46.4883" style="stroke:#A80036;stroke-width:1.0;" width="121" x="425.5" y="391.5"/><rect fill="#FFFFFF" height="10" style="stroke:#A80036;stroke-width:1.0;" width="15" x="526.5" y="396.5"/><rect fill="#FFFFFF" height="2" style="stroke:#A80036;stroke-width:1.0;" width="4" x="524.5" y="398.5"/><rect fill="#FFFFFF" height="2" style="stroke:#A80036;stroke-width:1.0;" width="4" x="524.5" y="402.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="81" x="440.5" y="425.0352">Interpreters</text><!--MD5=[38e62898c14212f96061eef12085427a]
+entity Projects--><rect fill="#FFFFFF" filter="url(#f1ttu13dj8lzl6)" height="46.4883" style="stroke:#A80036;stroke-width:1.0;" width="94" x="296" y="391.5"/><rect fill="#FFFFFF" height="10" style="stroke:#A80036;stroke-width:1.0;" width="15" x="370" y="396.5"/><rect fill="#FFFFFF" height="2" style="stroke:#A80036;stroke-width:1.0;" width="4" x="368" y="398.5"/><rect fill="#FFFFFF" height="2" style="stroke:#A80036;stroke-width:1.0;" width="4" x="368" y="402.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="54" x="311" y="425.0352">Projects</text><!--MD5=[feb5939ce823acf5a8245c3205b3c7a1]
+entity Users--><rect fill="#FFFFFF" filter="url(#f1ttu13dj8lzl6)" height="46.4883" style="stroke:#A80036;stroke-width:1.0;" width="78" x="183" y="391.5"/><rect fill="#FFFFFF" height="10" style="stroke:#A80036;stroke-width:1.0;" width="15" x="241" y="396.5"/><rect fill="#FFFFFF" height="2" style="stroke:#A80036;stroke-width:1.0;" width="4" x="239" y="398.5"/><rect fill="#FFFFFF" height="2" style="stroke:#A80036;stroke-width:1.0;" width="4" x="239" y="402.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="38" x="198" y="425.0352">Users</text><!--MD5=[d4d4b073c4e3a701f2b268917f727abf]
+entity bNotifications--><path d="M419.5,964 L524.5,964 C529.5,964 529.5,977.2441 529.5,977.2441 C529.5,977.2441 529.5,990.4883 524.5,990.4883 L419.5,990.4883 C414.5,990.4883 414.5,977.2441 414.5,977.2441 C414.5,977.2441 414.5,964 419.5,964 " fill="#FFFFFF" filter="url(#f1ttu13dj8lzl6)" style="stroke:#A80036;stroke-width:1.0;"/><path d="M524.5,964 C519.5,964 519.5,977.2441 519.5,977.2441 C519.5,990.4883 524.5,990.4883 524.5,990.4883 " fill="none" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="95" x="419.5" y="982.5352">bNotifications</text><!--MD5=[8dd143295b45fb2ebdf21b037dc73cd3]
+entity bEmails--><path d="M440.5,877 L503.5,877 C508.5,877 508.5,890.2441 508.5,890.2441 C508.5,890.2441 508.5,903.4883 503.5,903.4883 L440.5,903.4883 C435.5,903.4883 435.5,890.2441 435.5,890.2441 C435.5,890.2441 435.5,877 440.5,877 " fill="#FFFFFF" filter="url(#f1ttu13dj8lzl6)" style="stroke:#A80036;stroke-width:1.0;"/><path d="M503.5,877 C498.5,877 498.5,890.2441 498.5,890.2441 C498.5,903.4883 503.5,903.4883 503.5,903.4883 " fill="none" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="53" x="440.5" y="895.5352">bEmails</text><!--MD5=[19307527f0b4ba5448ffdc0ed8d5739e]
+entity bLogs--><path d="M426.5,778.5 L477.5,778.5 C482.5,778.5 482.5,791.7441 482.5,791.7441 C482.5,791.7441 482.5,804.9883 477.5,804.9883 L426.5,804.9883 C421.5,804.9883 421.5,791.7441 421.5,791.7441 C421.5,791.7441 421.5,778.5 426.5,778.5 " fill="#FFFFFF" filter="url(#f1ttu13dj8lzl6)" style="stroke:#A80036;stroke-width:1.0;"/><path d="M477.5,778.5 C472.5,778.5 472.5,791.7441 472.5,791.7441 C472.5,804.9883 477.5,804.9883 477.5,804.9883 " fill="none" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="41" x="426.5" y="797.0352">bLogs</text><!--MD5=[d8ebb45cc0f89d84b73b95f53f6f1e8a]
+entity SQLdatabase--><path d="M234,779 C234,769 288,769 288,769 C288,769 342,769 342,779 L342,804.4883 C342,814.4883 288,814.4883 288,814.4883 C288,814.4883 234,814.4883 234,804.4883 L234,779 " fill="#FFFFFF" filter="url(#f1ttu13dj8lzl6)" style="stroke:#A80036;stroke-width:1.0;"/><path d="M234,779 C234,789 288,789 288,789 C288,789 342,789 342,779 " fill="none" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="88" x="244" y="806.5352">SQLdatabase</text><!--MD5=[2e85d5dac196bd17730e7c914c01f33e]
+entity NoSQLdatabase--><path d="M71.5,779 C71.5,769 135,769 135,769 C135,769 198.5,769 198.5,779 L198.5,804.4883 C198.5,814.4883 135,814.4883 135,814.4883 C135,814.4883 71.5,814.4883 71.5,804.4883 L71.5,779 " fill="#FFFFFF" filter="url(#f1ttu13dj8lzl6)" style="stroke:#A80036;stroke-width:1.0;"/><path d="M71.5,779 C71.5,789 135,789 135,789 C135,789 198.5,789 198.5,779 " fill="none" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="107" x="81.5" y="806.5352">NoSQLdatabase</text><!--MD5=[645d8587175d8f7ad110cd370775931d]
+entity API--><ellipse cx="24" cy="14" fill="#FFFFFF" filter="url(#f1ttu13dj8lzl6)" rx="8" ry="8" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="22" x="13" y="44.5352">API</text><!--MD5=[3ec182edba44f1f9939e966485c1c6fa]
+entity BrokerConnect--><ellipse cx="506" cy="509.5" fill="#FFFFFF" filter="url(#f1ttu13dj8lzl6)" rx="8" ry="8" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="102" x="455" y="540.0352">BrokerConnect</text><!--MD5=[e83770f0db2b9dec76c352f375c64aa7]
+entity SQLConnect--><ellipse cx="321" cy="608.5" fill="#FFFFFF" filter="url(#f1ttu13dj8lzl6)" rx="8" ry="8" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="83" x="279.5" y="639.0352">SQLConnect</text><!--MD5=[dc7e36c2840fd2d0825c4558733b9d7b]
+link API to NginxGateway--><path d="M24,23.22 C24,37.84 24,69.5075 24,97.9 " fill="none" id="API-to-NginxGateway" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="24,97.9,28,88.9,24,92.9,20,88.9,24,97.9" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[5f70a3ae8cf6e15defe59cb94af8d92c]
+link qAuth to qUsers--><!--MD5=[9395371fd2adba21a8155ef5d7e821cd]
+link qCommunication to qProjects--><!--MD5=[132a7a624643e1215aa3747cb87106b6]
+link qInterpreters to qMonitoring--><!--MD5=[37c93e41d671167e7523de63c7e92d8f]
+link qAuth to Auth--><path d="M266.15,162.69 C340.33,181.03 521.43,225.94 524,228 C577.57,270.84 603.4,352.27 613.16,391.41 " fill="none" id="qAuth-Auth" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="44" x="585" y="248.5684">:40100</text><path d="M416.7927,192.8698 A10,10 0 0 0 413.3485 206.5861" fill="none" style="stroke:#A80036;stroke-width:1.5;"/><ellipse cx="421.9288" cy="201.45" fill="#FFFFFF" rx="6" ry="6" style="stroke:#A80036;stroke-width:1.5;"/><!--MD5=[2e2871cc1c71167ebb060031e0479fdc]
+link qCommunication to Communication--><path d="M439.24,159.46 C498.76,166.33 584.33,183.77 645,228 C703.74,270.83 740.84,352.26 756.06,391.41 " fill="none" id="qCommunication-Communication" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="44" x="715" y="248.5684">:40200</text><path d="M643.4517,218.1206 A10,10 0 0 0 635.1206 229.5483" fill="none" style="stroke:#A80036;stroke-width:1.5;"/><ellipse cx="645" cy="228" fill="#FFFFFF" rx="6" ry="6" style="stroke:#A80036;stroke-width:1.5;"/><!--MD5=[2dac212b2a8f3e9d48f4ad17ec3e3b64]
+link qInterpreters to Interpreters--><path d="M169.27,165.94 C249.28,182.19 389.85,212.46 408,228 C458.42,271.17 476.96,352.44 483.17,391.48 " fill="none" id="qInterpreters-Interpreters" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="44" x="464" y="248.5684">:40300</text><path d="M306.6345,188.6934 A10,10 0 0 0 303.2896 202.4343" fill="none" style="stroke:#A80036;stroke-width:1.5;"/><ellipse cx="311.8325" cy="197.2363" fill="#FFFFFF" rx="6" ry="6" style="stroke:#A80036;stroke-width:1.5;"/><!--MD5=[70473d1bb274e7222aed75b9975b13e7]
+link qProjects to Projects--><path d="M348.57,256.65 C347.57,284.88 345.07,355.23 343.79,391.34 " fill="none" id="qProjects-Projects" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="44" x="354" y="325.0684">:40600</text><path d="M353.6025,314.2243 A10,10 0 0 0 339.4693 313.7225" fill="none" style="stroke:#A80036;stroke-width:1.5;"/><ellipse cx="346.285" cy="321.04" fill="#FFFFFF" rx="6" ry="6" style="stroke:#A80036;stroke-width:1.5;"/><!--MD5=[473508164e5f133a2b29f37641177fa3]
+link qMonitoring to Monitoring--><path d="M111.35,256.65 C107.5,284.88 97.93,355.23 93.02,391.34 " fill="none" id="qMonitoring-Monitoring" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="44" x="112" y="325.0684">:40500</text><path d="M110.5424,314.9869 A10,10 0 0 0 96.5294 313.0801" fill="none" style="stroke:#A80036;stroke-width:1.5;"/><ellipse cx="102.5825" cy="321.04" fill="#FFFFFF" rx="6" ry="6" style="stroke:#A80036;stroke-width:1.5;"/><!--MD5=[9bd93b1ada8beff8b3b1718104323011]
+link qUsers to Users--><path d="M233.14,256.65 C231.13,284.88 226.14,355.23 223.57,391.34 " fill="none" id="qUsers-Users" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="44" x="237" y="325.0684">:40700</text><path d="M236.1192,314.4876 A10,10 0 0 0 222.0126 313.4858" fill="none" style="stroke:#A80036;stroke-width:1.5;"/><ellipse cx="228.565" cy="321.04" fill="#FFFFFF" rx="6" ry="6" style="stroke:#A80036;stroke-width:1.5;"/><!--MD5=[bc56def4517bb6dae5ebffef22c738e6]
+link BrokerConnect to MessageBroker--><path d="M508.49,518.69 C515.67,542.69 536.5,614.98 546,676.5 C547.9075,688.8525 549.3606,702.0294 550.4675,714.8767 C551.0209,721.3004 551.4878,727.6417 551.8816,733.7563 C551.9063,734.1385 551.9306,734.5198 551.9546,734.9002 C551.9667,735.0903 551.9786,735.2803 551.9905,735.47 " fill="none" id="BrokerConnect-MessageBroker" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[d843b85d86dd7f6e48f9c7c9b3732a0e]
+link bEmails to bNotifications--><!--MD5=[ce963a8e623254f6bdf565c672c673a8]
+link bLogs to bEmails--><!--MD5=[baab373b87ec47b0a24ac5abb86f021f]
+link SQLConnect to SQLdatabase--><path d="M319.5,617.75 C314.64,644.37 299.28,728.64 291.96,768.8 " fill="none" id="SQLConnect-SQLdatabase" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[97f3dfdbf3c04229130ced5112db3c3d]
+link Users to SQLConnect--><path d="M233.36,437.52 C253.33,476.25 294.31,555.74 312.26,590.55 " fill="none" id="Users-to-SQLConnect" style="stroke:#A80036;stroke-width:1.0;"/><path d="M322.9638,592.8461 A9,9 0 0 0 307.9329 600.6031" fill="none" style="stroke:#A80036;stroke-width:1.5;"/><!--MD5=[3385b494a25886570e830e381d8ac258]
+link Communication to SQLConnect--><path d="M721.24,437.65 C705.83,445.43 688.24,454.07 672,461.5 C546.5,518.89 391.85,579.93 339.39,600.37 " fill="none" id="Communication-to-SQLConnect" style="stroke:#A80036;stroke-width:1.0;"/><path d="M335.9882,610.763 A9,9 0 0 0 329.8483 595.0023" fill="none" style="stroke:#A80036;stroke-width:1.5;"/><!--MD5=[4703dcbe40f8f76ddf7fe02b55389255]
+link Interpreters to SQLConnect--><path d="M467.07,437.52 C433.36,476.75 363.72,557.79 334.43,591.87 " fill="none" id="Interpreters-to-SQLConnect" style="stroke:#A80036;stroke-width:1.0;"/><path d="M336.3315,602.6346 A9,9 0 0 0 323.4993 591.6149" fill="none" style="stroke:#A80036;stroke-width:1.5;"/><!--MD5=[a37ca23e3a038f91b73e78d47cfb7fc6]
+link Projects to SQLConnect--><path d="M340.48,437.52 C336.1,475.76 327.16,553.7 323.1,589.18 " fill="none" id="Projects-to-SQLConnect" style="stroke:#A80036;stroke-width:1.0;"/><path d="M330.6734,597.3677 A9,9 0 0 0 313.8696 595.4362" fill="none" style="stroke:#A80036;stroke-width:1.5;"/><!--MD5=[77a3c6e9508d7eddadb11fa5d8350e6a]
+link Monitoring to NoSQLdatabase--><path d="M92.65,437.56 C100.64,504.13 124.44,702.49 132.38,768.7 " fill="none" id="Monitoring-NoSQLdatabase" style="stroke:#A80036;stroke-width:1.0;"/><path d="M118.7121,595.4019 A10,10 0 0 0 104.6707 597.0866" fill="none" style="stroke:#A80036;stroke-width:1.5;"/><ellipse cx="112.5338" cy="603.265" fill="#FFFFFF" rx="6" ry="6" style="stroke:#A80036;stroke-width:1.5;"/><!--MD5=[87e569013c3a861a0c8343494dbb835a]
+link Auth to BrokerConnect--><path d="M592.29,437.62 C583.37,445.24 573.28,453.79 564,461.5 C550.34,472.85 534.68,485.52 523.08,494.84 " fill="none" id="Auth-to-BrokerConnect" style="stroke:#A80036;stroke-width:1.0;"/><path d="M522.7931,505.9108 A9,9 0 0 0 512.2091 492.7169" fill="none" style="stroke:#A80036;stroke-width:1.5;"/><!--MD5=[46f34ee488765de4b671c44e464e413d]
+link Interpreters to BrokerConnect--><path d="M490.74,437.54 C494.2,453.63 498.84,475.19 502.09,490.31 " fill="none" id="Interpreters-to-BrokerConnect" style="stroke:#A80036;stroke-width:1.0;"/><path d="M511.8817,495.6235 A9,9 0 0 0 495.3448 499.1775" fill="none" style="stroke:#A80036;stroke-width:1.5;"/><!--MD5=[f6305a71a0e9961a2b709916b35bdff0]
+link Communication to BrokerConnect--><path d="M727.19,437.67 C710.84,446.51 691.01,455.9 672,461.5 C640.69,470.72 630.6,461.33 599,469.5 C571.97,476.49 542.53,489.91 524.17,499.03 " fill="none" id="Communication-to-BrokerConnect" style="stroke:#A80036;stroke-width:1.0;"/><path d="M521.7648,509.7359 A9,9 0 0 0 514.1039 494.6558" fill="none" style="stroke:#A80036;stroke-width:1.5;"/><!--MD5=[e9be9061600aa28617e6137958910af4]
+link Projects to BrokerConnect--><path d="M372.07,437.65 C383.06,445.6 395.84,454.35 408,461.5 C434.73,477.22 467.53,492.13 487.59,500.79 " fill="none" id="Projects-to-BrokerConnect" style="stroke:#A80036;stroke-width:1.0;"/><path d="M497.2986,495.7327 A9,9 0 0 0 490.6765 511.297" fill="none" style="stroke:#A80036;stroke-width:1.5;"/><!--MD5=[494e6c48ff67b2cc6577733581df916a]
+link Monitoring to BrokerConnect--><path d="M120,437.55 C133.43,446.37 149.87,455.78 166,461.5 C282.43,502.79 433.27,508.03 486.42,508.53 " fill="none" id="Monitoring-to-BrokerConnect" style="stroke:#A80036;stroke-width:1.0;"/><path d="M493.7081,500.0997 A9,9 0 0 0 493.6356 517.014" fill="none" style="stroke:#A80036;stroke-width:1.5;"/><!--MD5=[16b91103d4edea0c5521a0d4eb86dfa8]
+link Users to BrokerConnect--><path d="M244.4,437.72 C254.28,446.36 266.47,455.58 279,461.5 C350.68,495.39 446.48,504.95 486.82,507.56 " fill="none" id="Users-to-BrokerConnect" style="stroke:#A80036;stroke-width:1.0;"/><path d="M494.27,499.5207 A9,9 0 0 0 493.3037 516.4076" fill="none" style="stroke:#A80036;stroke-width:1.5;"/><!--MD5=[59e7061ed6435d3d418fa9db8f1aee4c]
+link Communication to bEmails--><path d="M733.47,437.51 C713.84,454.42 692,479.71 692,508.5 C692,508.5 692,508.5 692,792.5 C692,871.54 571.45,886.44 508.82,888.85 " fill="none" id="Communication-bEmails" style="stroke:#A80036;stroke-width:1.0;"/><path d="M684.9289,551.0711 A10,10 0 0 0 699.0711 551.0711" fill="none" style="stroke:#A80036;stroke-width:1.5;"/><ellipse cx="692" cy="544" fill="#FFFFFF" rx="6" ry="6" style="stroke:#A80036;stroke-width:1.5;"/><!--MD5=[5533259c83c28a991fe2d83cd57be7ee]
+link Communication to bNotifications--><path d="M763.63,437.67 C763.34,456.51 763,484.28 763,508.5 C763,508.5 763,508.5 763,891 C763,939.09 614.7,961.84 529.84,970.92 " fill="none" id="Communication-bNotifications" style="stroke:#A80036;stroke-width:1.0;"/><path d="M755.9289,563.3836 A10,10 0 0 0 770.0711 563.3836" fill="none" style="stroke:#A80036;stroke-width:1.5;"/><ellipse cx="763" cy="556.3125" fill="#FFFFFF" rx="6" ry="6" style="stroke:#A80036;stroke-width:1.5;"/><!--MD5=[58f1e8e9215125f808a41fbf185dff2b]
+link Monitoring to bLogs--><path d="M104.24,437.81 C136.73,488.15 216.49,608.42 255,637.5 C294.06,667 318.21,647.99 358,676.5 C398.25,705.33 431.24,755.48 445.04,778.42 " fill="none" id="Monitoring-bLogs" style="stroke:#A80036;stroke-width:1.0;"/><path d="M256.3818,647.4041 A10,10 0 0 0 264.9041 636.1182" fill="none" style="stroke:#A80036;stroke-width:1.5;"/><ellipse cx="255" cy="637.5" fill="#FFFFFF" rx="6" ry="6" style="stroke:#A80036;stroke-width:1.5;"/><!--MD5=[f1ce52d2c8218512e18f0395736d3ef3]
+@startuml
+<style>
+queue {
+   LineThickness: 1
+   BackGroundColor: white
+}
+interface {
+   BackGroundColor: white
+}
+component {
+   BackGroundColor: white
+}
+database {
+   BackGroundColor: white
+}
+</style>
+
+top to bottom direction
+interface API
+API -down-> NginxGateway
+component NginxGateway {
+   queue qAuth
+   queue qCommunication
+   queue qInterpreters
+   queue qProjects
+   queue qMonitoring
+   queue qUsers
+
+   qAuth -[hidden]- qUsers
+   qCommunication -[hidden]- qProjects
+   qInterpreters -[hidden]- qMonitoring
+}
+
+node Microservices {
+   component Auth
+   component Monitoring
+   component Communication
+   component Interpreters
+   component Projects
+   component Users
+
+'   Users -[hidden]- Auth
+}
+
+
+' queue ->
+qAuth -(0- Auth : :40100
+qCommunication -(0- Communication : :40200
+qInterpreters -(0- Interpreters : :40300
+qProjects -(0- Projects : :40600
+qMonitoring -(0- Monitoring : :40500
+qUsers -(0- Users : :40700
+
+interface BrokerConnect
+interface SQLConnect
+
+rectangle 3rrParty {
+BrokerConnect - MessageBroker
+
+   component MessageBroker {
+      queue bNotifications
+      queue bEmails
+      queue bLogs
+      bEmails -[hidden]- bNotifications
+      bLogs -[hidden]- bEmails
+   }
+    node Databases {
+         database SQLdatabase
+         database NoSQLdatabase
+      }
+}
+SQLConnect - - SQLdatabase
+
+Users - - -( SQLConnect
+Communication - - -( SQLConnect
+Interpreters - - -( SQLConnect
+Projects - - -( SQLConnect
+Monitoring -(0- NoSQLdatabase
+
+Auth - -( BrokerConnect
+Interpreters - -( BrokerConnect
+Communication - -( BrokerConnect
+Projects - -( BrokerConnect
+Monitoring - -( BrokerConnect
+Users - -( BrokerConnect
+
+Communication -0)- bEmails
+Communication -0)- bNotifications
+Monitoring -0)- bLogs
+@enduml
+
+@startuml
+<style>
+queue {
+   LineThickness: 1
+   BackGroundColor: white
+}
+interface {
+   BackGroundColor: white
+}
+component {
+   BackGroundColor: white
+}
+database {
+   BackGroundColor: white
+}
+</style>
+
+top to bottom direction
+interface API
+API -down-> NginxGateway
+component NginxGateway {
+   queue qAuth
+   queue qCommunication
+   queue qInterpreters
+   queue qProjects
+   queue qMonitoring
+   queue qUsers
+
+   qAuth -[hidden]- qUsers
+   qCommunication -[hidden]- qProjects
+   qInterpreters -[hidden]- qMonitoring
+}
+
+node Microservices {
+   component Auth
+   component Monitoring
+   component Communication
+   component Interpreters
+   component Projects
+   component Users
+
+}
+
+
+qAuth -(0- Auth : :40100
+qCommunication -(0- Communication : :40200
+qInterpreters -(0- Interpreters : :40300
+qProjects -(0- Projects : :40600
+qMonitoring -(0- Monitoring : :40500
+qUsers -(0- Users : :40700
+
+interface BrokerConnect
+interface SQLConnect
+
+rectangle 3rrParty {
+BrokerConnect - MessageBroker
+
+   component MessageBroker {
+      queue bNotifications
+      queue bEmails
+      queue bLogs
+      bEmails -[hidden]- bNotifications
+      bLogs -[hidden]- bEmails
+   }
+    node Databases {
+         database SQLdatabase
+         database NoSQLdatabase
+      }
+}
+SQLConnect - - SQLdatabase
+
+Users - - -( SQLConnect
+Communication - - -( SQLConnect
+Interpreters - - -( SQLConnect
+Projects - - -( SQLConnect
+Monitoring -(0- NoSQLdatabase
+
+Auth - -( BrokerConnect
+Interpreters - -( BrokerConnect
+Communication - -( BrokerConnect
+Projects - -( BrokerConnect
+Monitoring - -( BrokerConnect
+Users - -( BrokerConnect
+
+Communication -0)- bEmails
+Communication -0)- bNotifications
+Monitoring -0)- bLogs
+@enduml
+
+PlantUML version 1.2022.1(Tue Feb 01 19:19:58 CET 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: GB
+--></g></svg>

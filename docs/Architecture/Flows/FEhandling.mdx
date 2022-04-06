@@ -1,0 +1,67 @@
+---
+sidebar_position: 20
+---
+
+import Mermaid from '@theme/Mermaid';
+
+# Client Request Lifecycle
+
+The main lifecycle of authorization cycle and how `axios` with `useAuthorization()` hook works.
+
+<Mermaid
+	chart={`
+		sequenceDiagram
+			actor User
+			User->>React: authorized request (R1)
+			activate React
+			React ->> React: get access token from storage
+      React ->> React: prepare R1
+      React->>Gateway: R1
+			activate Gateway
+			alt access token is valid
+				Gateway-->>React: 20x response
+			  deactivate Gateway
+				React -->> User: show R1
+      else expired access token
+			  React ->> React: get refresh token from storage
+        React ->> Gateway: refresh pair (R2)
+			  activate Gateway
+        alt refresh token token is valid
+          Gateway -->> React: 201 new token pair
+          React ->> Gateway: repeat R1
+          Note right of Gateway: see flow above
+        else expired refresh token
+          Gateway -->> React: 403 unauthorized
+          deactivate Gateway
+          React ->> React: sign out
+				  React -->> User: show sign in screen
+        end
+			  deactivate React
+			end
+`}
+/>
+
+## Hooks
+
+### `useAxios()`
+
+Provides 2 clients for authorized and unauthorized requests.
+Should be used with `react-query` library to handle network requests, e.g.:
+
+```jsx
+import { useAxios } from '../hooks';
+import { useQuery } from 'react-query';
+
+const Component = () => {
+	const { axiosAuth } = useAxios();
+	const rqSomething = useQuery('something', () => axiosAuth.get('/something'));
+
+	return <>{JSON.stringify(rqSomething.data, null, 3)}</>;
+};
+```
+
+### `useAuthorization()`
+
+The hook should be used only at nextjs pages.
+According to set paramenter it redirects use to appropriate pages if needed.
+An unauthorized user is redirected to sign in page and after successful login will be redirected back (see callback in URL).

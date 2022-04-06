@@ -1,0 +1,177 @@
+---
+sidebar_position: 200
+---
+
+import Mermaid from '@theme/Mermaid';
+
+# Interpreters
+
+:::tip
+Interpreters are ES6 modules that exports an interface for a data structure and a wrapper with React component that can visualise the data structure.
+:::
+
+:::caution
+Interpreters are manually built files, there is no automatic build process yet.
+:::
+
+:::caution
+Interpreters are not a part of the information system, they should be deployed somewhere else.
+:::
+
+## ES6 Export Interface
+
+```javascript
+export const dataStructure = [
+	{
+		label: 'Title',
+		name: 'myTitle',
+		type: 'text',
+		defaultValue: '',
+	},
+	{
+		label: 'Number',
+		name: 'myNumber',
+		type: 'number',
+		defaultValue: 0,
+	},
+];
+
+export var renderer = (React) => {
+	const Component = (props) => {
+		const { myTitle, myNumber } = props;
+		return 'My Title: ' + myTitle + ' My Number: ' + myNumber;
+	};
+
+	return Component;
+};
+```
+
+- `dataStructure` is an array of objects that describe form fields for the project part creation form.
+- `renderer` is a function that gets React instance and returns a React component that will be used to render the data structure. Properties of the component are the values of the fields.
+
+The data structure described above will be rendered as form with two fields. There is no need to import React, it will be provided by the interpreter.
+
+## JSX
+
+JSX is not supported by browsers yet, it should be transpiled to ES6 manually via SWC or Babel.
+Let's assume that we want to create a new interpreter that will increment a number with each button click.
+
+Our source code will look like this:
+
+```javascript
+export const Component = (props) => {
+	const { myTitle, myNumber } = props ?? {};
+	const [counter, setCounter] = React.useState(myNumber ?? 0);
+	return (
+		<>
+			{myTitle && <h1>{myTitle}</h1>}
+			<div>Current count: {counter}</div>
+			<div className="btn btn-primary" onClick={() => setCounter(counter + 1)}>
+				Increase +1
+			</div>
+		</>
+	);
+};
+```
+
+It can be developed as a stand-alone application. The only restriction is to use `React` variable everywhere and develop in 1 file.
+
+This component will need pro user two properties: `myTitle` and `myNumber`.
+
+```js
+export const dataStructure = [
+	{
+		label: 'Title',
+		name: 'myTitle',
+		type: 'text',
+		defaultValue: '',
+	},
+	{
+		label: 'Number',
+		name: 'myNumber',
+		type: 'number',
+		defaultValue: 0,
+	},
+];
+```
+
+Now we need to transpile our code to ES6. Open e.g. [SWC Playground](https://swc.rs/playground) and paste the Component code. Make sure to enable JSX and Target ES2016 (or something compatible with target browsers). We will get something like:
+
+```javascript
+export const Component = (props) => {
+	const { myTitle, myNumber } = props !== null && props !== void 0 ? props : {};
+	var ref;
+	const [counter, setCounter] = React.useState(
+		(ref = +myNumber) !== null && ref !== void 0 ? ref : 0,
+	);
+	return React.createElement(
+		React.Fragment,
+		null,
+		myTitle && React.createElement('h1', null, myTitle),
+		React.createElement('div', null, 'Current count: ', counter),
+		React.createElement(
+			'div',
+			{
+				className: 'btn btn-primary',
+				onClick: () => setCounter(counter + 1),
+			},
+			'Increase +1',
+		),
+	);
+};
+```
+
+The interpreter is alomst ready. Substitute export declaration:
+
+```js
+export const Component = (props) => {
+// with
+export var renderer = (React) => (props) => {
+```
+
+And add the `dataStructure`. The final result should look like:
+
+```javascript
+export const dataStructure = [
+	{
+		label: 'Title',
+		name: 'myTitle',
+		type: 'text',
+		defaultValue: '',
+	},
+	{
+		label: 'Number',
+		name: 'myNumber',
+		type: 'number',
+		defaultValue: 0,
+	},
+];
+
+export var renderer = (React) => (props) => {
+	const { myTitle, myNumber } = props !== null && props !== void 0 ? props : {};
+	var ref;
+	const [counter, setCounter] = React.useState(
+		(ref = +myNumber) !== null && ref !== void 0 ? ref : 0,
+	);
+	return React.createElement(
+		React.Fragment,
+		null,
+		myTitle && React.createElement('h1', null, myTitle),
+		React.createElement('div', null, 'Current count: ', counter),
+		React.createElement(
+			'div',
+			{
+				className: 'btn btn-primary',
+				onClick: () => setCounter(counter + 1),
+			},
+			'Increase +1',
+		),
+	);
+};
+```
+
+## Add interpreter
+
+Deploy the created interpreter somewhere. You need only a public URL of it.
+
+And then add it to the system with unique name+version via MS Interpreters REST API.

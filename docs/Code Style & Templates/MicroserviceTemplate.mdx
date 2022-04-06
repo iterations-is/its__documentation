@@ -1,0 +1,75 @@
+---
+sidebar_position: 2
+---
+
+# Microservice Template
+
+All microservices use the same template for the consistent design.
+The recommended structure is:
+
+```text
+.
+├── src
+│  ├── broker                    # broker connections
+│  │  ├── channelConsumers.ts
+│  │  ├── channelProducers.ts
+│  │  └── index.ts
+│  ├── dto                       # DTOs and validations
+│  │  ├── ExampleReqDTO.ts
+│  │  └── index.ts
+│  ├── routes
+│  │  ├── external                  # external routes
+│  │  │  ├── epExampleExternal.ts
+│  │  │  └── index.ts
+│  │  ├── internal                  # internal routes (should be protected)
+│  │  │  ├── epExampleInternal.ts
+│  │  │  └── index.ts
+│  │  ├── external.router.ts
+│  │  ├── index.ts
+│  │  └── internal.router.ts
+│  ├── utils
+│  ├── constants.ts
+│  └── main.ts
+├── src-ms                       # shared MS folder
+├── test                         # integration tests
+├── babel.config.js
+├── Dockerfile
+├── package.json
+├── README.md
+├── tsconfig.json
+├── webpack.config.js
+└── yarn.lock
+```
+
+## Dockerfile
+
+The base dockerfile template has 2 phases - build and run - for the better clarity.
+You may uncomment row connected with prisma to enable automatic prisma migration before MS start.
+
+```dockerfile
+FROM node:16-alpine as builder
+
+# Dependencies Image Part
+WORKDIR /app
+COPY package.json yarn.lock ./
+RUN yarn install
+
+# Application Image Part
+COPY . /app
+# RUN yarn prisma generate
+RUN yarn build
+
+FROM node:16-alpine as runner
+WORKDIR /app
+# RUN yarn add prisma
+
+# COPY --from=builder /app/prisma ./prisma
+COPY --from=builder /app/.env.production ./.env
+COPY --from=builder /app/build .
+EXPOSE ${MS_EXPRESS_PORT}
+
+#CMD yarn prisma generate && yarn prisma migrate deploy && node /app/main.js
+CMD node /app/main.js
+```
+
+More information how to run the MS can be found in the [Development](/GettingStarted/Development) section.

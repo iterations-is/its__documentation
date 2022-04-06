@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="181px" preserveAspectRatio="none" style="width:800px;height:181px;background:#FFFFFF;" version="1.1" viewBox="0 0 800 181" width="800px" zoomAndPan="magnify"><defs><filter height="300%" id="fos7kw4gfi836" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[69bd8f23bd574036786be7922096bba8]
+entity MS--><rect fill="#FFFFFF" filter="url(#fos7kw4gfi836)" height="46.4883" style="stroke:#A80036;stroke-width:1.0;" width="125" x="317.5" y="7"/><rect fill="#FFFFFF" height="10" style="stroke:#A80036;stroke-width:1.0;" width="15" x="422.5" y="12"/><rect fill="#FFFFFF" height="2" style="stroke:#A80036;stroke-width:1.0;" width="4" x="420.5" y="14"/><rect fill="#FFFFFF" height="2" style="stroke:#A80036;stroke-width:1.0;" width="4" x="420.5" y="18"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="85" x="332.5" y="40.5352">Microservice</text><!--MD5=[229a15e378ab638a4ff8d78416717c67]
+entity getabout--><rect fill="#FFFFFF" filter="url(#fos7kw4gfi836)" height="36.4883" style="stroke:#A80036;stroke-width:1.0;" width="98" x="7" y="124"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="78" x="17" y="147.5352">GET /about</text><!--MD5=[a0c656d589ecb4afabb2e43bd46f87c0]
+entity GETabouthealth--><rect fill="#FFFFFF" filter="url(#fos7kw4gfi836)" height="36.4883" style="stroke:#A80036;stroke-width:1.0;" width="148" x="140" y="124"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="128" x="150" y="147.5352">GET /about/health</text><!--MD5=[1763c5d551db3daa774a417a929726b5]
+entity RabbitMQLogs--><ellipse cx="380" cy="142" fill="#FFFFFF" filter="url(#fos7kw4gfi836)" rx="8" ry="8" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="99" x="330.5" y="172.5352">RabbitMQLogs</text><!--MD5=[2e8e3807132386025cf7f3c7a854e3bc]
+entity RabbitMQEmails--><ellipse cx="535" cy="142" fill="#FFFFFF" filter="url(#fos7kw4gfi836)" rx="8" ry="8" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="111" x="479.5" y="172.5352">RabbitMQEmails</text><!--MD5=[7414cd49983dd4921390ca306de69777]
+entity RabbitMQNotitications--><ellipse cx="717" cy="142" fill="#FFFFFF" filter="url(#fos7kw4gfi836)" rx="8" ry="8" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="153" x="640.5" y="172.5352">RabbitMQNotitications</text><!--MD5=[13a01f14d6dc3fcd926918c5ef47bb59]
+link MS to getabout--><path d="M317.41,49.1 C264.82,64.74 187.9,88.61 122,113 C114.56,115.75 106.73,118.87 99.16,122.01 " fill="none" id="MS-to-getabout" style="stroke:#A80036;stroke-width:1.0;"/><ellipse cx="100.042" cy="121.6508" fill="#FFFFFF" rx="6" ry="6" style="stroke:#A80036;stroke-width:1.5;"/><!--MD5=[9cd8c6e548fc104ea30b921318558e16]
+link MS to GETabouthealth--><path d="M346.41,53.26 C316.46,73.1 273.03,101.89 244.17,121.01 " fill="none" id="MS-to-GETabouthealth" style="stroke:#A80036;stroke-width:1.0;"/><ellipse cx="244.6754" cy="120.6816" fill="#FFFFFF" rx="6" ry="6" style="stroke:#A80036;stroke-width:1.5;"/><!--MD5=[3fa4d3fcbb614838755ea9540c146ab6]
+link MS to RabbitMQLogs--><path d="M380,53.26 C380,73.74 380,103.73 380,122.81 " fill="none" id="MS-to-RabbitMQLogs" style="stroke:#A80036;stroke-width:1.0;"/><path d="M388.4572,129.7818 A9,9 0 0 0 371.5428 129.7818" fill="none" style="stroke:#A80036;stroke-width:1.5;"/><!--MD5=[02e8b13a246286bda86553aec906d8f5]
+link MS to RabbitMQEmails--><path d="M411.37,53.26 C443.35,75.96 491.82,110.36 517.54,128.61 " fill="none" id="MS-to-RabbitMQEmails" style="stroke:#A80036;stroke-width:1.0;"/><path d="M528.3021,125.8737 A9,9 0 0 0 518.5005 139.6588" fill="none" style="stroke:#A80036;stroke-width:1.5;"/><!--MD5=[b50ca1d17bcdb415f0710baaec77f198]
+link MS to RabbitMQNotitications--><path d="M442.6,51.43 C520.83,76.97 650.27,119.22 698.31,134.9 " fill="none" id="MS-to-RabbitMQNotitications" style="stroke:#A80036;stroke-width:1.0;"/><path d="M707.6995,129.0647 A9,9 0 0 0 702.4305 145.1376" fill="none" style="stroke:#A80036;stroke-width:1.5;"/><!--MD5=[0f9ccd150de45932a5094a51f368bd81]
+@startuml
+<style>
+queue {
+   LineThickness: 1
+   BackGroundColor: white
+}
+interface {
+   BackGroundColor: white
+}
+component {
+   BackGroundColor: white
+}
+database {
+   BackGroundColor: white
+}
+rectangle {
+   BackGroundColor: white
+}
+</style>
+
+top to bottom direction
+'left to right direction
+
+component Microservice as MS
+rectangle "GET /about" as getabout
+rectangle "GET /about/health" as GETabouthealth
+MS - -0 getabout
+MS - -0 GETabouthealth
+MS - -( RabbitMQLogs
+MS - -( RabbitMQEmails
+MS - -( RabbitMQNotitications
+
+@enduml
+
+@startuml
+<style>
+queue {
+   LineThickness: 1
+   BackGroundColor: white
+}
+interface {
+   BackGroundColor: white
+}
+component {
+   BackGroundColor: white
+}
+database {
+   BackGroundColor: white
+}
+rectangle {
+   BackGroundColor: white
+}
+</style>
+
+top to bottom direction
+
+component Microservice as MS
+rectangle "GET /about" as getabout
+rectangle "GET /about/health" as GETabouthealth
+MS - -0 getabout
+MS - -0 GETabouthealth
+MS - -( RabbitMQLogs
+MS - -( RabbitMQEmails
+MS - -( RabbitMQNotitications
+
+@enduml
+
+PlantUML version 1.2022.1(Tue Feb 01 19:19:58 CET 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: GB
+--></g></svg>

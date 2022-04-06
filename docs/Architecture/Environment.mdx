@@ -1,0 +1,41 @@
+---
+sidebar_position: 1
+---
+
+# Environment
+
+## Backend
+
+A basic backend infrastructure is set according to the following principles.
+All of these parts are started by the `docker-compose` command.
+
+![](/img/arch.svg)
+
+### Github Store
+
+The `Projects` microservice is responsible for storing the projects in Github repositories.
+Thats the reason of required `Github` organization account and github access token.
+
+![](/img/arch-github.svg)
+
+### Microservice interface
+
+Each microservice has standardised interface:
+
+![](/img/ms.svg)
+
+- `GET /about` - endpoint for getting information about microservice
+- `GET /about/health` - endpoint for getting health status of microservice (online/offline)
+- `RabbitMQ` - RabbitMQ queue for communication between microservices
+  - `Logs` - create and send a log message
+  - `Emails` - create email message and send it
+  - `Notifications` - create notification message for a specific user
+
+Of course, there is a possibility to add additional interfaces.
+
+## Frontend
+Web client is implemnted as a Next.js application that uses microservices via Gateway, see Backend architecture, and may load additional interpreters from the internet via provided URL from the server.
+
+![](/img/arch-fe.svg)
+
+The loaded interpreteris a `ES6` module that is loaded via dynamic `import` statement.
