@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="206px" preserveAspectRatio="none" style="width:631px;height:206px;background:#FFFFFF;" version="1.1" viewBox="0 0 631 206" width="631px" zoomAndPan="magnify"><defs><filter height="300%" id="fchge4jlojdz8" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[f72e8905bd6e3a370cb106f12698fafd]
+cluster Microservices--><polygon fill="#FFFFFF" filter="url(#fchge4jlojdz8)" points="440,16,450,6,614,6,614,179,604,189,440,189,440,16" style="stroke:#000000;stroke-width:1.0;"/><line style="stroke:#000000;stroke-width:1.0;" x1="604" x2="614" y1="16" y2="6"/><line style="stroke:#000000;stroke-width:1.0;" x1="440" x2="604" y1="16" y2="16"/><line style="stroke:#000000;stroke-width:1.0;" x1="604" x2="604" y1="16" y2="189"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="98" x="474" y="32.5352">Microservices</text><!--MD5=[ce2b2ca345d0c59eb0fad61889427b8e]
+entity MS1--><rect fill="#FFFFFF" filter="url(#fchge4jlojdz8)" height="46.4883" style="stroke:#000000;stroke-width:1.0;" width="69" x="492" y="46"/><rect fill="#FFFFFF" height="10" style="stroke:#000000;stroke-width:1.0;" width="15" x="541" y="51"/><rect fill="#FFFFFF" height="2" style="stroke:#000000;stroke-width:1.0;" width="4" x="539" y="53"/><rect fill="#FFFFFF" height="2" style="stroke:#000000;stroke-width:1.0;" width="4" x="539" y="57"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="29" x="507" y="79.5352">MS1</text><!--MD5=[ce9ede88145a854f470bfeec3753b108]
+entity MS2--><rect fill="#FFFFFF" filter="url(#fchge4jlojdz8)" height="46.4883" style="stroke:#000000;stroke-width:1.0;" width="69" x="492" y="127"/><rect fill="#FFFFFF" height="10" style="stroke:#000000;stroke-width:1.0;" width="15" x="541" y="132"/><rect fill="#FFFFFF" height="2" style="stroke:#000000;stroke-width:1.0;" width="4" x="539" y="134"/><rect fill="#FFFFFF" height="2" style="stroke:#000000;stroke-width:1.0;" width="4" x="539" y="138"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="29" x="507" y="160.5352">MS2</text><!--MD5=[7eeebffe8f5bd87c90d14dbc297525aa]
+entity WebClient--><rect fill="#FFFFFF" filter="url(#fchge4jlojdz8)" height="46.4883" style="stroke:#000000;stroke-width:1.0;" width="109" x="15.5" y="46"/><rect fill="#FFFFFF" height="10" style="stroke:#000000;stroke-width:1.0;" width="15" x="104.5" y="51"/><rect fill="#FFFFFF" height="2" style="stroke:#000000;stroke-width:1.0;" width="4" x="102.5" y="53"/><rect fill="#FFFFFF" height="2" style="stroke:#000000;stroke-width:1.0;" width="4" x="102.5" y="57"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="69" x="30.5" y="79.5352">WebClient</text><!--MD5=[e40f168f9fbfb2b72ab5c7b68242f92e]
+entity MobileClient--><rect fill="#FFFFFF" filter="url(#fchge4jlojdz8)" height="46.4883" style="stroke:#000000;stroke-width:1.0;" width="126" x="7" y="127"/><rect fill="#FFFFFF" height="10" style="stroke:#000000;stroke-width:1.0;" width="15" x="113" y="132"/><rect fill="#FFFFFF" height="2" style="stroke:#000000;stroke-width:1.0;" width="4" x="111" y="134"/><rect fill="#FFFFFF" height="2" style="stroke:#000000;stroke-width:1.0;" width="4" x="111" y="138"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="86" x="22" y="160.5352">MobileClient</text><!--MD5=[49cbbb1648246ecd0e2d56eda0c19f08]
+entity Gateway--><polygon fill="#FFFFFF" filter="url(#fchge4jlojdz8)" points="245,97,255,87,342,87,342,123.4883,332,133.4883,245,133.4883,245,97" style="stroke:#000000;stroke-width:1.0;"/><line style="stroke:#000000;stroke-width:1.0;" x1="332" x2="342" y1="97" y2="87"/><line style="stroke:#000000;stroke-width:1.0;" x1="245" x2="332" y1="97" y2="97"/><line style="stroke:#000000;stroke-width:1.0;" x1="332" x2="332" y1="97" y2="133.4883"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="57" x="260" y="120.5352">Gateway</text><!--MD5=[9b680a13361b750e3ad19e312ec379dc]
+link WebClient to Gateway--><path d="M124.62,78.92 C159.52,85.39 204.85,93.78 239.6,100.21 " fill="none" id="WebClient-to-Gateway" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="244.65,101.14,236.5178,95.5841,239.7318,100.2393,235.0767,103.4533,244.65,101.14" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="50" x="164" y="84.5684">Request</text><!--MD5=[94dc5ceefb7c8c2161310181c08d78e5]
+link MobileClient to Gateway--><path d="M133.24,142.25 C158.68,138.73 188.34,134.2 215,129 C222.99,127.44 231.41,125.6 239.62,123.68 " fill="none" id="MobileClient-to-Gateway" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="244.7,122.48,235.0192,120.6682,239.8354,123.6355,236.8681,128.4517,244.7,122.48" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="50" x="164" y="125.5684">Request</text><!--MD5=[9fac6a474fe16d1bd71b50dfc788c0aa]
+link Gateway to MS1--><path d="M342.08,101.55 C386.72,93.63 452.36,81.98 491.82,74.98 " fill="none" id="Gateway-MS1" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="36" x="380" y="77.5684">:4000</text><path d="M410.6947,82.1932 A10,10 0 0 0 413.1657 96.1178" fill="none" style="stroke:#000000;stroke-width:1.5;"/><ellipse cx="418.8925" cy="87.92" fill="#FFFFFF" rx="6" ry="6" style="stroke:#000000;stroke-width:1.5;"/><!--MD5=[0bcc3e789645d5bac44c58a3426fab10]
+link Gateway to MS2--><path d="M336.01,133.06 C347.35,138.3 359.87,143.15 372,146 C412.36,155.47 460.32,154.91 491.76,153.01 " fill="none" id="Gateway-MS2" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="36" x="380" y="135.5684">:4001</text><path d="M428.4309,146.4312 A10,10 0 0 0 427.8874 160.5629" fill="none" style="stroke:#000000;stroke-width:1.5;"/><ellipse cx="435.225" cy="153.7688" fill="#FFFFFF" rx="6" ry="6" style="stroke:#000000;stroke-width:1.5;"/><!--MD5=[bfdbc86e1617c05cf0ced00ddd4fac36]
+@startuml
+<style>
+queue {
+   LineThickness: 1
+   BackGroundColor: white
+   LineColor: black
+}
+interface {
+   BackGroundColor: white
+   LineColor: black
+}
+component {
+   BackGroundColor: white
+   LineColor: black
+}
+database {
+   BackGroundColor: white
+   LineColor: black
+}
+node {
+   BackGroundColor: white
+   LineColor: black
+}
+rectangle{
+   LineColor: black
+}
+arrow {
+   LineColor: black
+}
+</style>
+
+'top to bottom direction
+left to right direction
+component WebClient
+component MobileClient
+
+node Gateway
+
+node Microservices {
+   component MS1
+   component MS2
+}
+
+WebClient - -> Gateway : Request
+MobileClient - -> Gateway : Request
+
+Gateway -(0- MS1 : :4000
+Gateway -(0- MS2 : :4001
+@enduml
+
+@startuml
+<style>
+queue {
+   LineThickness: 1
+   BackGroundColor: white
+   LineColor: black
+}
+interface {
+   BackGroundColor: white
+   LineColor: black
+}
+component {
+   BackGroundColor: white
+   LineColor: black
+}
+database {
+   BackGroundColor: white
+   LineColor: black
+}
+node {
+   BackGroundColor: white
+   LineColor: black
+}
+rectangle{
+   LineColor: black
+}
+arrow {
+   LineColor: black
+}
+</style>
+
+left to right direction
+component WebClient
+component MobileClient
+
+node Gateway
+
+node Microservices {
+   component MS1
+   component MS2
+}
+
+WebClient - -> Gateway : Request
+MobileClient - -> Gateway : Request
+
+Gateway -(0- MS1 : :4000
+Gateway -(0- MS2 : :4001
+@enduml
+
+PlantUML version 1.2022.1(Tue Feb 01 19:19:58 CET 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: GB
+--></g></svg>

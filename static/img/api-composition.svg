@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="277px" preserveAspectRatio="none" style="width:469px;height:277px;background:#FFFFFF;" version="1.1" viewBox="0 0 469 277" width="469px" zoomAndPan="magnify"><defs><filter height="300%" id="f1ptwb2e9m4fq6" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[df3e39cca9e639b032bcb56e6238e548]
+entity Request--><ellipse cx="234" cy="14" fill="#FFFFFF" filter="url(#f1ptwb2e9m4fq6)" rx="8" ry="8" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="81" x="193.5" y="44.5352">API Request</text><!--MD5=[645d8587175d8f7ad110cd370775931d]
+entity API--><rect fill="#FFFFFF" filter="url(#f1ptwb2e9m4fq6)" height="46.4883" style="stroke:#000000;stroke-width:1.0;" width="154" x="157" y="103"/><rect fill="#FFFFFF" height="10" style="stroke:#000000;stroke-width:1.0;" width="15" x="291" y="108"/><rect fill="#FFFFFF" height="2" style="stroke:#000000;stroke-width:1.0;" width="4" x="289" y="110"/><rect fill="#FFFFFF" height="2" style="stroke:#000000;stroke-width:1.0;" width="4" x="289" y="114"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="114" x="172" y="136.5352">API Composition</text><!--MD5=[ce2b2ca345d0c59eb0fad61889427b8e]
+entity MS1--><ellipse cx="65" cy="238" fill="#FFFFFF" filter="url(#f1ptwb2e9m4fq6)" rx="8" ry="8" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="118" x="6" y="268.5352">API Request MS 1</text><!--MD5=[ce9ede88145a854f470bfeec3753b108]
+entity MS2--><ellipse cx="234" cy="238" fill="#FFFFFF" filter="url(#f1ptwb2e9m4fq6)" rx="8" ry="8" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="118" x="175" y="268.5352">API Request MS 2</text><!--MD5=[e2a8d548366ff7c1d9736d7779a25634]
+entity MS3--><ellipse cx="403" cy="238" fill="#FFFFFF" filter="url(#f1ptwb2e9m4fq6)" rx="8" ry="8" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="118" x="344" y="268.5352">API Request MS 3</text><!--MD5=[baa3c8be650bf2acaecfb756f8b247e6]
+link Request to API--><path d="M234,23.27 C234,38.85 234,73.18 234,97.65 " fill="none" id="Request-to-API" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="234,102.71,238,93.71,234,97.71,230,93.71,234,102.71" style="stroke:#000000;stroke-width:1.0;"/><!--MD5=[51dbf71c28d2b4b4504928e3c0826bd4]
+link API to MS1--><path d="M199.8,149.26 C162.57,173.49 104.87,211.05 78.71,228.07 " fill="none" id="API-to-MS1" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="74.21,231.01,83.9339,229.4461,78.3986,228.2795,79.5651,222.7443,74.21,231.01" style="stroke:#000000;stroke-width:1.0;"/><!--MD5=[00fe72a2355664043b9dbdb7aafde8a8]
+link API to MS2--><path d="M234,149.26 C234,171.56 234,205.16 234,223.64 " fill="none" id="API-to-MS2" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="234,228.86,238,219.86,234,223.86,230,219.86,234,228.86" style="stroke:#000000;stroke-width:1.0;"/><!--MD5=[0b8b774e756cf1acfdf4e414a2af94ca]
+link API to MS3--><path d="M268.2,149.26 C305.43,173.49 363.13,211.05 389.29,228.07 " fill="none" id="API-to-MS3" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="393.79,231.01,388.4349,222.7443,389.6014,228.2795,384.0661,229.4461,393.79,231.01" style="stroke:#000000;stroke-width:1.0;"/><!--MD5=[b6a32ca49be428b7fc4c3a897386d125]
+@startuml
+<style>
+queue {
+   LineThickness: 1
+   BackGroundColor: white
+   LineColor: black
+}
+interface {
+   BackGroundColor: white
+   LineColor: black
+}
+component {
+   BackGroundColor: white
+   LineColor: black
+}
+database {
+   BackGroundColor: white
+   LineColor: black
+}
+node {
+   BackGroundColor: white
+   LineColor: black
+}
+rectangle{
+   LineColor: black
+}
+arrow {
+   LineColor: black
+}
+</style>
+
+top to bottom direction
+'left to right direction
+
+interface "API Request" as Request
+rectangle [API Composition] as API
+
+Request - -> API
+
+interface "API Request MS 1" as MS1
+interface "API Request MS 2" as MS2
+interface "API Request MS 3" as MS3
+
+API - -> MS1
+API - -> MS2
+API - -> MS3
+
+@enduml
+
+@startuml
+<style>
+queue {
+   LineThickness: 1
+   BackGroundColor: white
+   LineColor: black
+}
+interface {
+   BackGroundColor: white
+   LineColor: black
+}
+component {
+   BackGroundColor: white
+   LineColor: black
+}
+database {
+   BackGroundColor: white
+   LineColor: black
+}
+node {
+   BackGroundColor: white
+   LineColor: black
+}
+rectangle{
+   LineColor: black
+}
+arrow {
+   LineColor: black
+}
+</style>
+
+top to bottom direction
+
+interface "API Request" as Request
+rectangle [API Composition] as API
+
+Request - -> API
+
+interface "API Request MS 1" as MS1
+interface "API Request MS 2" as MS2
+interface "API Request MS 3" as MS3
+
+API - -> MS1
+API - -> MS2
+API - -> MS3
+
+@enduml
+
+PlantUML version 1.2022.1(Tue Feb 01 19:19:58 CET 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: GB
+--></g></svg>

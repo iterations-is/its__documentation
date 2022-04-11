@@ -30,20 +30,31 @@ arrow {
 }
 </style>
 
-'top to bottom direction
-left to right direction
-
-
-node Server {
-   component Gateway as BE
+top to bottom direction
+'left to right direction
+database Database {
+  component [Schema B] as ShemaA
+  component [Schema A] as ShemaB
+  component [Schema C] as ShemaC
 }
 
-component [Next.js] as FE
 
-BE -0)- FE
-node  Interpreters {
-   component [<name>.<version>.js] as interpret
+node Microservices {
+   component [MS 1] as MS3
+   component [MS 3] as MS2
+   component [MS 2] as MS1
 }
 
-FE o-- interpret : ES6 Module
+ShemaA <-- MS3
+ShemaA <-- MS2
+ShemaA <-- MS1
+
+ShemaB <-- MS3
+ShemaB <-- MS2
+ShemaB <-- MS1
+
+ShemaC <-- MS3
+ShemaC <-- MS2
+ShemaC <-- MS1
+
 @enduml

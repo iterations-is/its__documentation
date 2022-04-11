@@ -30,20 +30,20 @@ arrow {
 }
 </style>
 
-'top to bottom direction
-left to right direction
+top to bottom direction
+'left to right direction
 
+interface "API Request" as Request
+rectangle [API Composition] as API
 
-node Server {
-   component Gateway as BE
-}
+Request --> API
 
-component [Next.js] as FE
+interface "API Request MS 1" as MS1
+interface "API Request MS 2" as MS2
+interface "API Request MS 3" as MS3
 
-BE -0)- FE
-node  Interpreters {
-   component [<name>.<version>.js] as interpret
-}
+API --> MS1
+API --> MS2
+API --> MS3
 
-FE o-- interpret : ES6 Module
 @enduml

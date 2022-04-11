@@ -32,18 +32,19 @@ arrow {
 
 'top to bottom direction
 left to right direction
+component WebClient
+component MobileClient
 
+node Gateway
 
-node Server {
-   component Gateway as BE
+node Microservices {
+   component MS1
+   component MS2
 }
 
-component [Next.js] as FE
+WebClient --> Gateway : Request
+MobileClient --> Gateway : Request
 
-BE -0)- FE
-node  Interpreters {
-   component [<name>.<version>.js] as interpret
-}
-
-FE o-- interpret : ES6 Module
+Gateway -(0- MS1 : :4000
+Gateway -(0- MS2 : :4001
 @enduml

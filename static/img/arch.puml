@@ -1,18 +1,31 @@
-
 @startuml
 <style>
 queue {
    LineThickness: 1
    BackGroundColor: white
+   LineColor: black
 }
 interface {
    BackGroundColor: white
+   LineColor: black
 }
 component {
    BackGroundColor: white
+   LineColor: black
 }
 database {
    BackGroundColor: white
+   LineColor: black
+}
+node {
+   BackGroundColor: white
+   LineColor: black
+}
+rectangle{
+   LineColor: black
+}
+arrow {
+   LineColor: black
 }
 </style>
 
@@ -20,7 +33,7 @@ top to bottom direction
 'left to right direction
 interface API
 API -down-> NginxGateway
-component NginxGateway {
+component "Nginx Gateway" as NginxGateway {
    queue qAuth
    queue qCommunication
    queue qInterpreters
@@ -56,10 +69,10 @@ qUsers -(0- Users : :40700
 interface BrokerConnect
 interface SQLConnect
 
-rectangle 3rrParty {
+rectangle "3rd Party" as 3rdParty {
 BrokerConnect - MessageBroker
 
-   component MessageBroker {
+   component "Message Broker" as MessageBroker {
       queue bNotifications
       queue bEmails
       queue bLogs

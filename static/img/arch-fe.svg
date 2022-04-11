@@ -1,28 +1,39 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="125px" preserveAspectRatio="none" style="width:639px;height:125px;background:#FFFFFF;" version="1.1" viewBox="0 0 639 125" width="639px" zoomAndPan="magnify"><defs><filter height="300%" id="f5sq488d4egsd" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[979da56a7f83e2393dc758167ae295d0]
-cluster Server--><polygon fill="#FFFFFF" filter="url(#f5sq488d4egsd)" points="16,16,26,6,145,6,145,98,135,108,16,108,16,16" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="135" x2="145" y1="16" y2="6"/><line style="stroke:#A80036;stroke-width:1.0;" x1="16" x2="135" y1="16" y2="16"/><line style="stroke:#A80036;stroke-width:1.0;" x1="135" x2="135" y1="16" y2="108"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="44" x="54.5" y="32.5352">Server</text><!--MD5=[e290d50d3113a805a6e73ea3358c24f1]
-cluster Interpreters--><polygon fill="#FFFFFF" filter="url(#f5sq488d4egsd)" points="399,16,409,6,622,6,622,98,612,108,399,108,399,16" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="612" x2="622" y1="16" y2="6"/><line style="stroke:#A80036;stroke-width:1.0;" x1="399" x2="612" y1="16" y2="16"/><line style="stroke:#A80036;stroke-width:1.0;" x1="612" x2="612" y1="16" y2="108"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="85" x="464" y="32.5352">Interpreters</text><!--MD5=[77b0ea1454fe7a7546e2e8ed5acd0c75]
-entity BE--><rect fill="#FFFFFF" filter="url(#f5sq488d4egsd)" height="46.4883" style="stroke:#A80036;stroke-width:1.0;" width="97" x="32" y="46"/><rect fill="#FFFFFF" height="10" style="stroke:#A80036;stroke-width:1.0;" width="15" x="109" y="51"/><rect fill="#FFFFFF" height="2" style="stroke:#A80036;stroke-width:1.0;" width="4" x="107" y="53"/><rect fill="#FFFFFF" height="2" style="stroke:#A80036;stroke-width:1.0;" width="4" x="107" y="57"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="57" x="47" y="79.5352">Gateway</text><!--MD5=[b516222ba08e560942d69b389ea65b3b]
-entity interpret--><rect fill="#FFFFFF" filter="url(#f5sq488d4egsd)" height="46.4883" style="stroke:#A80036;stroke-width:1.0;" width="191" x="415" y="46"/><rect fill="#FFFFFF" height="10" style="stroke:#A80036;stroke-width:1.0;" width="15" x="586" y="51"/><rect fill="#FFFFFF" height="2" style="stroke:#A80036;stroke-width:1.0;" width="4" x="584" y="53"/><rect fill="#FFFFFF" height="2" style="stroke:#A80036;stroke-width:1.0;" width="4" x="584" y="57"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="151" x="430" y="79.5352">&lt;name&gt;.&lt;version&gt;.js</text><!--MD5=[91973c96897d1b47acf069d2375b565a]
-entity FE--><rect fill="#FFFFFF" filter="url(#f5sq488d4egsd)" height="46.4883" style="stroke:#A80036;stroke-width:1.0;" width="87" x="192" y="46"/><rect fill="#FFFFFF" height="10" style="stroke:#A80036;stroke-width:1.0;" width="15" x="259" y="51"/><rect fill="#FFFFFF" height="2" style="stroke:#A80036;stroke-width:1.0;" width="4" x="257" y="53"/><rect fill="#FFFFFF" height="2" style="stroke:#A80036;stroke-width:1.0;" width="4" x="257" y="57"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="47" x="207" y="79.5352">Next.js</text><!--MD5=[3e68418683ab4be64727e3935637485c]
-link BE to FE--><path d="M129.07,69 C149.16,69 172.37,69 191.89,69 " fill="none" id="BE-FE" style="stroke:#A80036;stroke-width:1.0;"/><path d="M167.7648,76.0711 A10,10 0 0 0 167.7648 61.9289" fill="none" style="stroke:#A80036;stroke-width:1.5;"/><ellipse cx="160.6938" cy="69" fill="#FFFFFF" rx="6" ry="6" style="stroke:#A80036;stroke-width:1.5;"/><!--MD5=[b90fb52f4e0ba11e58bbddc69280cbf9]
-reverse link FE to interpret--><path d="M292.55,69 C327.77,69 374.09,69 414.88,69 " fill="none" id="FE-backto-interpret" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="none" points="279.16,69,285.16,73,291.16,69,285.16,65,279.16,69" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="72" x="310" y="65.5684">ES6 Module</text><!--MD5=[7935afe5522d7f3a316bd613e0b730eb]
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="125px" preserveAspectRatio="none" style="width:639px;height:125px;background:#FFFFFF;" version="1.1" viewBox="0 0 639 125" width="639px" zoomAndPan="magnify"><defs><filter height="300%" id="foivj0mph7pb0" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[979da56a7f83e2393dc758167ae295d0]
+cluster Server--><polygon fill="#FFFFFF" filter="url(#foivj0mph7pb0)" points="16,16,26,6,145,6,145,98,135,108,16,108,16,16" style="stroke:#000000;stroke-width:1.0;"/><line style="stroke:#000000;stroke-width:1.0;" x1="135" x2="145" y1="16" y2="6"/><line style="stroke:#000000;stroke-width:1.0;" x1="16" x2="135" y1="16" y2="16"/><line style="stroke:#000000;stroke-width:1.0;" x1="135" x2="135" y1="16" y2="108"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="44" x="54.5" y="32.5352">Server</text><!--MD5=[e290d50d3113a805a6e73ea3358c24f1]
+cluster Interpreters--><polygon fill="#FFFFFF" filter="url(#foivj0mph7pb0)" points="399,16,409,6,622,6,622,98,612,108,399,108,399,16" style="stroke:#000000;stroke-width:1.0;"/><line style="stroke:#000000;stroke-width:1.0;" x1="612" x2="622" y1="16" y2="6"/><line style="stroke:#000000;stroke-width:1.0;" x1="399" x2="612" y1="16" y2="16"/><line style="stroke:#000000;stroke-width:1.0;" x1="612" x2="612" y1="16" y2="108"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="85" x="464" y="32.5352">Interpreters</text><!--MD5=[77b0ea1454fe7a7546e2e8ed5acd0c75]
+entity BE--><rect fill="#FFFFFF" filter="url(#foivj0mph7pb0)" height="46.4883" style="stroke:#000000;stroke-width:1.0;" width="97" x="32" y="46"/><rect fill="#FFFFFF" height="10" style="stroke:#000000;stroke-width:1.0;" width="15" x="109" y="51"/><rect fill="#FFFFFF" height="2" style="stroke:#000000;stroke-width:1.0;" width="4" x="107" y="53"/><rect fill="#FFFFFF" height="2" style="stroke:#000000;stroke-width:1.0;" width="4" x="107" y="57"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="57" x="47" y="79.5352">Gateway</text><!--MD5=[b516222ba08e560942d69b389ea65b3b]
+entity interpret--><rect fill="#FFFFFF" filter="url(#foivj0mph7pb0)" height="46.4883" style="stroke:#000000;stroke-width:1.0;" width="191" x="415" y="46"/><rect fill="#FFFFFF" height="10" style="stroke:#000000;stroke-width:1.0;" width="15" x="586" y="51"/><rect fill="#FFFFFF" height="2" style="stroke:#000000;stroke-width:1.0;" width="4" x="584" y="53"/><rect fill="#FFFFFF" height="2" style="stroke:#000000;stroke-width:1.0;" width="4" x="584" y="57"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="151" x="430" y="79.5352">&lt;name&gt;.&lt;version&gt;.js</text><!--MD5=[91973c96897d1b47acf069d2375b565a]
+entity FE--><rect fill="#FFFFFF" filter="url(#foivj0mph7pb0)" height="46.4883" style="stroke:#000000;stroke-width:1.0;" width="87" x="192" y="46"/><rect fill="#FFFFFF" height="10" style="stroke:#000000;stroke-width:1.0;" width="15" x="259" y="51"/><rect fill="#FFFFFF" height="2" style="stroke:#000000;stroke-width:1.0;" width="4" x="257" y="53"/><rect fill="#FFFFFF" height="2" style="stroke:#000000;stroke-width:1.0;" width="4" x="257" y="57"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="47" x="207" y="79.5352">Next.js</text><!--MD5=[3e68418683ab4be64727e3935637485c]
+link BE to FE--><path d="M129.07,69 C149.16,69 172.37,69 191.89,69 " fill="none" id="BE-FE" style="stroke:#000000;stroke-width:1.0;"/><path d="M167.7648,76.0711 A10,10 0 0 0 167.7648 61.9289" fill="none" style="stroke:#000000;stroke-width:1.5;"/><ellipse cx="160.6938" cy="69" fill="#FFFFFF" rx="6" ry="6" style="stroke:#000000;stroke-width:1.5;"/><!--MD5=[b90fb52f4e0ba11e58bbddc69280cbf9]
+reverse link FE to interpret--><path d="M292.55,69 C327.77,69 374.09,69 414.88,69 " fill="none" id="FE-backto-interpret" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="none" points="279.16,69,285.16,73,291.16,69,285.16,65,279.16,69" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="72" x="310" y="65.5684">ES6 Module</text><!--MD5=[bb51fbdff6b089df99a1e097784b4835]
 @startuml
 <style>
 queue {
    LineThickness: 1
    BackGroundColor: white
+   LineColor: black
 }
 interface {
    BackGroundColor: white
+   LineColor: black
 }
 component {
    BackGroundColor: white
+   LineColor: black
 }
 database {
    BackGroundColor: white
+   LineColor: black
 }
 node {
    BackGroundColor: white
+   LineColor: black
+}
+rectangle{
+   LineColor: black
+}
+arrow {
+   LineColor: black
 }
 </style>
 
@@ -49,18 +60,29 @@ FE o- - interpret : ES6 Module
 queue {
    LineThickness: 1
    BackGroundColor: white
+   LineColor: black
 }
 interface {
    BackGroundColor: white
+   LineColor: black
 }
 component {
    BackGroundColor: white
+   LineColor: black
 }
 database {
    BackGroundColor: white
+   LineColor: black
 }
 node {
    BackGroundColor: white
+   LineColor: black
+}
+rectangle{
+   LineColor: black
+}
+arrow {
+   LineColor: black
 }
 </style>
 
