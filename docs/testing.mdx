@@ -1,0 +1,32 @@
+---
+sidebar_position: 2000
+---
+
+# Testing
+
+## Unit tests
+
+Each MS repository has unit tests automatically run when you do `git push`.
+They also may run via:
+
+```
+yarn test
+```
+
+Or
+
+```
+yarn test:coverage
+```
+
+## Integration API tests
+
+In a stand-alone repository `its-testing` is located a jest environment with integration tests against the API.
+
+Before running the tests, you need to deploy the server path of the system and configure the `.env.text` file according `.env.test.example`.
+
+The tests are run via:
+
+```
+yarn test
+```

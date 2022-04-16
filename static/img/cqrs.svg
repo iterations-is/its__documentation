@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="254px" preserveAspectRatio="none" style="width:476px;height:254px;background:#FFFFFF;" version="1.1" viewBox="0 0 476 254" width="476px" zoomAndPan="magnify"><defs><filter height="300%" id="f8or5aw4crvcf" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[5bab31b8118b8c8cff0440c347387734]
+entity API1--><ellipse cx="43.5" cy="14" fill="#FFFFFF" filter="url(#f8or5aw4crvcf)" rx="8" ry="8" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="61" x="13" y="44.5352">Write API</text><!--MD5=[a66cf04e2ad9efabc28f300b4d9e7438]
+entity API2--><ellipse cx="43.5" cy="148" fill="#FFFFFF" filter="url(#f8or5aw4crvcf)" rx="8" ry="8" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="61" x="13" y="178.5352">Write API</text><!--MD5=[52371d6beb0d5c20fa709523b91278c8]
+entity DBMS1--><path d="M6,68.5 C6,58.5 43.5,58.5 43.5,58.5 C43.5,58.5 81,58.5 81,68.5 L81,93.9883 C81,103.9883 43.5,103.9883 43.5,103.9883 C43.5,103.9883 6,103.9883 6,93.9883 L6,68.5 " fill="#FFFFFF" filter="url(#f8or5aw4crvcf)" style="stroke:#000000;stroke-width:1.0;"/><path d="M6,68.5 C6,78.5 43.5,78.5 43.5,78.5 C43.5,78.5 81,78.5 81,68.5 " fill="none" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="55" x="16" y="96.0352">DB MS 1</text><!--MD5=[50faaf48f4139782ee5f1b95c6eae03d]
+entity DBMS2--><path d="M6,202.5 C6,192.5 43.5,192.5 43.5,192.5 C43.5,192.5 81,192.5 81,202.5 L81,227.9883 C81,237.9883 43.5,237.9883 43.5,237.9883 C43.5,237.9883 6,237.9883 6,227.9883 L6,202.5 " fill="#FFFFFF" filter="url(#f8or5aw4crvcf)" style="stroke:#000000;stroke-width:1.0;"/><path d="M6,202.5 C6,212.5 43.5,212.5 43.5,212.5 C43.5,212.5 81,212.5 81,202.5 " fill="none" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="55" x="16" y="230.0352">DB MS 2</text><!--MD5=[b3ad01ddeee7a8023078597cce53191f]
+entity D1--><rect fill="#FFFFFF" filter="url(#f8or5aw4crvcf)" height="46.4883" style="stroke:#000000;stroke-width:1.0;" width="70" x="141" y="72"/><path d="M164.3333,72 L164.3333,77 L157.3333,84 L141,84 " fill="none" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="30" x="156" y="105.5352">data</text><!--MD5=[a36976c252c313df2dc3293dc523a6ce]
+entity D2--><rect fill="#FFFFFF" filter="url(#f8or5aw4crvcf)" height="46.4883" style="stroke:#000000;stroke-width:1.0;" width="70" x="141" y="166"/><path d="M164.3333,166 L164.3333,171 L157.3333,178 L141,178 " fill="none" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="30" x="156" y="199.5352">data</text><!--MD5=[645d8587175d8f7ad110cd370775931d]
+entity API--><ellipse cx="365" cy="82" fill="#FFFFFF" filter="url(#f8or5aw4crvcf)" rx="8" ry="8" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="60" x="335" y="112.5352">Read API</text><!--MD5=[3291c088e7c4ea891b9c34fd03c281b1]
+entity ECDB--><path d="M271,136.5 C271,126.5 365,126.5 365,126.5 C365,126.5 459,126.5 459,136.5 L459,161.9883 C459,171.9883 365,171.9883 365,171.9883 C365,171.9883 271,171.9883 271,161.9883 L271,136.5 " fill="#FFFFFF" filter="url(#f8or5aw4crvcf)" style="stroke:#000000;stroke-width:1.0;"/><path d="M271,136.5 C271,146.5 365,146.5 365,146.5 C365,146.5 459,146.5 459,136.5 " fill="none" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="168" x="281" y="164.0352">Eventually Consistent DB</text><!--MD5=[7895eced8216dc7ec233c0687e3ef88d]
+link API1 to DBMS1--><path d="M43.5,23.04 C43.5,34.86 43.5,46.67 43.5,58.49 " fill="none" id="API1-DBMS1" style="stroke:#000000;stroke-width:1.0;"/><!--MD5=[dfe871c157e949e305faf7c0f9cc1c35]
+link API2 to DBMS2--><path d="M43.5,157.04 C43.5,168.86 43.5,180.67 43.5,192.49 " fill="none" id="API2-DBMS2" style="stroke:#000000;stroke-width:1.0;"/><!--MD5=[3c547e5b05468fb54f9be0cea0052ed9]
+link DBMS1 to D1--><path d="M81.2,84.94 C98.14,86.75 118.29,88.92 135.55,90.77 " fill="none" id="DBMS1-to-D1" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="140.81,91.33,132.2833,86.4009,135.838,90.8014,131.4375,94.356,140.81,91.33" style="stroke:#000000;stroke-width:1.0;"/><!--MD5=[dd10a9d7677cbd04ed2072d45590b714]
+link DBMS2 to D2--><path d="M81.2,207.69 C98.14,204.31 118.29,200.3 135.55,196.86 " fill="none" id="DBMS2-to-D2" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="140.81,195.81,131.204,193.6366,135.9055,196.7823,132.7597,201.4838,140.81,195.81" style="stroke:#000000;stroke-width:1.0;"/><!--MD5=[0b1edede5ae6f5a7495c4be8b32bd42a]
+link API to ECDB--><path d="M365,91.04 C365,102.86 365,114.67 365,126.49 " fill="none" id="API-ECDB" style="stroke:#000000;stroke-width:1.0;"/><!--MD5=[6117a20fb284d78233cd3d39efca9f0d]
+link D1 to ECDB--><path d="M211.3,104.9 C230.87,110.56 256.32,117.91 280.82,124.98 " fill="none" id="D1-to-ECDB" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="285.7,126.39,278.1626,120.0507,280.8962,125.0032,275.9437,127.7368,285.7,126.39" style="stroke:#000000;stroke-width:1.0;"/><!--MD5=[c26bd9e2d185d466101247d55f1c8cbe]
+link D2 to ECDB--><path d="M211.3,181.66 C226.85,178.34 246.12,174.22 265.66,170.03 " fill="none" id="D2-to-ECDB" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="270.64,168.97,261.0033,166.9369,265.7502,170.0137,262.6733,174.7606,270.64,168.97" style="stroke:#000000;stroke-width:1.0;"/><!--MD5=[ec8f50ce55e7bddc86ff9f7dd5b038ca]
+@startuml
+<style>
+queue {
+   LineThickness: 1
+   BackGroundColor: white
+   LineColor: black
+}
+interface {
+   BackGroundColor: white
+   LineColor: black
+}
+component {
+   BackGroundColor: white
+   LineColor: black
+}
+database {
+   BackGroundColor: white
+   LineColor: black
+}
+node {
+   BackGroundColor: white
+   LineColor: black
+}
+frame {
+   BackGroundColor: white
+   LineColor: black
+}
+rectangle{
+   LineColor: black
+}
+arrow {
+   LineColor: black
+}
+</style>
+
+'top to bottom direction
+left to right direction
+interface "Write API" as API1
+interface "Write API" as API2
+database "DB MS 1" as DBMS1
+database "DB MS 2" as DBMS2
+
+API1 - DBMS1
+API2 - DBMS2
+
+frame "data" as D1
+frame "data" as D2
+
+DBMS1 - -> D1
+DBMS2 - -> D2
+
+interface "Read API" as API
+database "Eventually Consistent DB" as ECDB
+API - ECDB
+D1 - -> ECDB
+D2 - -> ECDB
+@enduml
+
+@startuml
+<style>
+queue {
+   LineThickness: 1
+   BackGroundColor: white
+   LineColor: black
+}
+interface {
+   BackGroundColor: white
+   LineColor: black
+}
+component {
+   BackGroundColor: white
+   LineColor: black
+}
+database {
+   BackGroundColor: white
+   LineColor: black
+}
+node {
+   BackGroundColor: white
+   LineColor: black
+}
+frame {
+   BackGroundColor: white
+   LineColor: black
+}
+rectangle{
+   LineColor: black
+}
+arrow {
+   LineColor: black
+}
+</style>
+
+left to right direction
+interface "Write API" as API1
+interface "Write API" as API2
+database "DB MS 1" as DBMS1
+database "DB MS 2" as DBMS2
+
+API1 - DBMS1
+API2 - DBMS2
+
+frame "data" as D1
+frame "data" as D2
+
+DBMS1 - -> D1
+DBMS2 - -> D2
+
+interface "Read API" as API
+database "Eventually Consistent DB" as ECDB
+API - ECDB
+D1 - -> ECDB
+D2 - -> ECDB
+@enduml
+
+PlantUML version 1.2022.1(Tue Feb 01 19:19:58 CET 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: GB
+--></g></svg>

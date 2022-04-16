@@ -1,0 +1,58 @@
+
+@startuml
+<style>
+queue {
+   LineThickness: 1
+   BackGroundColor: white
+   LineColor: black
+}
+interface {
+   BackGroundColor: white
+   LineColor: black
+}
+component {
+   BackGroundColor: white
+   LineColor: black
+}
+database {
+   BackGroundColor: white
+   LineColor: black
+}
+node {
+   BackGroundColor: white
+   LineColor: black
+}
+frame {
+   BackGroundColor: white
+   LineColor: black
+}
+rectangle{
+   LineColor: black
+}
+arrow {
+   LineColor: black
+}
+</style>
+
+'top to bottom direction
+left to right direction
+interface "Write API" as API1
+interface "Write API" as API2
+database "DB MS 1" as DBMS1
+database "DB MS 2" as DBMS2
+
+API1 - DBMS1
+API2 - DBMS2
+
+frame "data" as D1
+frame "data" as D2
+
+DBMS1 --> D1
+DBMS2 --> D2
+
+interface "Read API" as API
+database "Eventually Consistent DB" as ECDB
+API - ECDB
+D1 --> ECDB
+D2 --> ECDB
+@enduml
