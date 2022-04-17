@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="231px" preserveAspectRatio="none" style="width:263px;height:231px;background:#FFFFFF;" version="1.1" viewBox="0 0 263 231" width="263px" zoomAndPan="magnify"><defs><filter height="300%" id="f1n7n4bghecah4" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[38bfa9dc6018363cafe15f923a4b8db9]
+entity service--><rect fill="#FFFFFF" filter="url(#f1n7n4bghecah4)" height="46.4883" style="stroke:#000000;stroke-width:1.0;" width="88" x="124.5" y="93.4531"/><rect fill="#FFFFFF" height="10" style="stroke:#000000;stroke-width:1.0;" width="15" x="192.5" y="98.4531"/><rect fill="#FFFFFF" height="2" style="stroke:#000000;stroke-width:1.0;" width="4" x="190.5" y="100.4531"/><rect fill="#FFFFFF" height="2" style="stroke:#000000;stroke-width:1.0;" width="4" x="190.5" y="104.4531"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="48" x="139.5" y="126.9883">Service</text><!--MD5=[c7e91ba39201c842dfca6b23b4092490]
+entity asyncOut--><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="69" x="75" y="20.9883">Async Out</text><!--MD5=[51a5e37b2520a463c839b57cf79c5b12]
+entity asyncIn--><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="57" x="199" y="20.9883">Async In</text><!--MD5=[d2f8f2e96d0ee47f3cae4689207cae16]
+entity syncOut--><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="60" x="84.5" y="222.9883">Sync Out</text><!--MD5=[6cb2b77aef6177fa9fc590b127f61414]
+entity syncIn--><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="48" x="199.5" y="222.9883">Sync In</text><!--MD5=[7468467f3b6b392f1d176d828c753b77]
+entity db--><path d="M6,103.9531 C6,93.9531 47.5,93.9531 47.5,93.9531 C47.5,93.9531 89,93.9531 89,103.9531 L89,129.4414 C89,139.4414 47.5,139.4414 47.5,139.4414 C47.5,139.4414 6,139.4414 6,129.4414 L6,103.9531 " fill="#FFFFFF" filter="url(#f1n7n4bghecah4)" style="stroke:#000000;stroke-width:1.0;"/><path d="M6,103.9531 C6,113.9531 47.5,113.9531 47.5,113.9531 C47.5,113.9531 89,113.9531 89,103.9531 " fill="none" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="63" x="16" y="131.4883">Database</text><!--MD5=[be40ddbedcb6fb14c165b3a4d5be6c52]
+reverse link asyncIn to service--><path d="M212.01,42.4431 C202.61,58.2131 190.73,78.1431 181.76,93.1931 " fill="none" id="asyncIn-backto-service" style="stroke:#000000;stroke-width:1.0;"/><path d="M208.3809,31.9988 A9,9 0 0 0 222.902 40.6727" fill="none" style="stroke:#000000;stroke-width:1.5;"/><!--MD5=[8ad04141f1c735da5a5f3549fc1d4f04]
+reverse link asyncOut to service--><path d="M122.42,38.1331 C132.14,54.4531 145.43,76.7431 155.24,93.1931 " fill="none" id="asyncOut-backto-service" style="stroke:#000000;stroke-width:1.0;"/><ellipse cx="122.8594" cy="38.8426" fill="#FFFFFF" rx="6" ry="6" style="stroke:#000000;stroke-width:1.5;"/><!--MD5=[3f854d3b428d0fab3aef9d2089d986d9]
+link service to syncIn--><path d="M180.98,139.9131 C189.27,154.8431 200.2,174.5131 208.9,190.1631 " fill="none" id="service-to-syncIn" style="stroke:#000000;stroke-width:1.0;"/><path d="M219.8781,192.5251 A9,9 0 0 0 205.0922 200.7395" fill="none" style="stroke:#000000;stroke-width:1.5;"/><!--MD5=[c10a3de24761ec23866225bc6b678755]
+link service to syncOut--><path d="M156.25,139.9131 C147.26,156.3931 135.13,178.6431 126.26,194.9031 " fill="none" id="service-to-syncOut" style="stroke:#000000;stroke-width:1.0;"/><ellipse cx="126.7099" cy="194.0486" fill="#FFFFFF" rx="6" ry="6" style="stroke:#000000;stroke-width:1.5;"/><!--MD5=[76b73c099d42ef0adc83445eb26d0601]
+link db to service--><path d="M89.09,116.4531 C100.88,116.4531 112.67,116.4531 124.45,116.4531 " fill="none" id="db-service" style="stroke:#000000;stroke-width:1.0;"/><!--MD5=[45c28e6074095455f22742c3c7d3a518]
+@startuml
+<style>
+queue {
+   LineThickness: 1
+   BackGroundColor: white
+   LineColor: black
+}
+interface {
+   BackGroundColor: white
+   LineColor: black
+}
+component {
+   BackGroundColor: white
+   LineColor: black
+}
+database {
+   BackGroundColor: white
+   LineColor: black
+}
+node {
+   BackGroundColor: white
+   LineColor: black
+}
+rectangle{
+   LineColor: black
+}
+arrow {
+   LineColor: black
+}
+</style>
+
+top to bottom direction
+'left to right direction
+
+component "Service" as service
+label "Async Out" as asyncOut
+label "Async In" as asyncIn
+service -u-( asyncIn
+service -u-0 asyncOut
+label "Sync Out" as syncOut
+label "Sync In" as syncIn
+service -d-( syncIn
+service -d-0 syncOut
+
+database Database as db
+db -r- service
+@enduml
+
+@startuml
+<style>
+queue {
+   LineThickness: 1
+   BackGroundColor: white
+   LineColor: black
+}
+interface {
+   BackGroundColor: white
+   LineColor: black
+}
+component {
+   BackGroundColor: white
+   LineColor: black
+}
+database {
+   BackGroundColor: white
+   LineColor: black
+}
+node {
+   BackGroundColor: white
+   LineColor: black
+}
+rectangle{
+   LineColor: black
+}
+arrow {
+   LineColor: black
+}
+</style>
+
+top to bottom direction
+
+component "Service" as service
+label "Async Out" as asyncOut
+label "Async In" as asyncIn
+service -u-( asyncIn
+service -u-0 asyncOut
+label "Sync Out" as syncOut
+label "Sync In" as syncIn
+service -d-( syncIn
+service -d-0 syncOut
+
+database Database as db
+db -r- service
+@enduml
+
+PlantUML version 1.2022.1(Tue Feb 01 19:19:58 CET 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: GB
+--></g></svg>

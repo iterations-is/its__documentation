@@ -1,0 +1,47 @@
+@startuml
+<style>
+queue {
+   LineThickness: 1
+   BackGroundColor: white
+   LineColor: black
+}
+interface {
+   BackGroundColor: white
+   LineColor: black
+}
+component {
+   BackGroundColor: white
+   LineColor: black
+}
+database {
+   BackGroundColor: white
+   LineColor: black
+}
+node {
+   BackGroundColor: white
+   LineColor: black
+}
+rectangle{
+   LineColor: black
+}
+arrow {
+   LineColor: black
+}
+</style>
+
+top to bottom direction
+'left to right direction
+
+component "Service" as service
+label "Async Out" as asyncOut
+label "Async In" as asyncIn
+service -u-( asyncIn
+service -u-0 asyncOut
+label "Sync Out" as syncOut
+label "Sync In" as syncIn
+service -d-( syncIn
+service -d-0 syncOut
+
+database Database as db
+db -r- service
+@enduml
